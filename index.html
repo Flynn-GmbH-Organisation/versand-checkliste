@@ -235,7 +235,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
   <div class="ld"><svg width="14" height="10" viewBox="0 0 18 14" fill="none"><path d="M9 1L17 13H1L9 1Z" fill="white"/></svg></div>
   <div class="ph-brand">
     <h1>Versand-Checkliste</h1>
-    <div class="sub" id="phsub">83 Aufträge · Stand 02.06.2026</div>
+    <div class="sub" id="phsub">82 Aufträge · Stand 02.06.2026</div>
   </div>
   <div class="spacer"></div>
   <button class="back" id="backBtn" onclick="closeCl()">‹ Übersicht</button>
@@ -244,10 +244,10 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
 
 <div id="overview">
   <div class="stat-row">
-    <div class="stat">       <div class="v">83</div><div class="l">Aufträge gesamt</div></div>
+    <div class="stat">       <div class="v">82</div><div class="l">Aufträge gesamt</div></div>
     <div class="stat red">   <div class="v">2</div>  <div class="l">Kritisch (&gt;10 mm)</div></div>
-    <div class="stat amber"> <div class="v">41</div><div class="l">Prüfen</div></div>
-    <div class="stat green"> <div class="v">40</div><div class="l">Ohne Befund</div></div>
+    <div class="stat amber"> <div class="v">36</div><div class="l">Prüfen</div></div>
+    <div class="stat green"> <div class="v">44</div><div class="l">Ohne Befund</div></div>
   </div>
   <div class="toolbar">
     <div class="search">
@@ -255,7 +255,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
       <input id="q" type="text" placeholder="Auftragsnummer suchen…" oninput="applyFilter()" autocomplete="off">
     </div>
     <div class="chips">
-      <button class="chip active" data-f="all"   onclick="setChip(this)">Alle <span class="cn">83</span></button>
+      <button class="chip active" data-f="all"   onclick="setChip(this)">Alle <span class="cn">82</span></button>
       <button class="chip"        data-f="red"   onclick="setChip(this)">Kritisch <span class="cn">2</span></button>
       <button class="chip"        data-f="warn"  onclick="setChip(this)">Warnung</button>
       <button class="chip"        data-f="nofg"  onclick="setChip(this)">Ohne Zeichnung</button>
@@ -362,15 +362,15 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-badges"><span class="bdg b-green">Freigabe</span></div>
     <div class="oc-meta"><span class="oc-prog" id="p_S06084">0/6</span></div>
   </button>
-<button class="oc lvl-amber" data-nr="S06111" data-level="amber"
-      data-fg="0"
+<button class="oc lvl-green" data-nr="S06111" data-level="green"
+      data-fg="1"
       data-warn="0"
       data-abw="0"
       onclick="openCl('S06111')">
     <div class="oc-dot"></div>
     <div class="oc-main"><div class="oc-nr">S06111</div><div class="oc-typ">Schiebetür</div></div>
-    <div class="oc-badges"><span class="bdg b-amber">keine Zeichnung</span></div>
-    <div class="oc-meta"><span class="oc-prog" id="p_S06111">0/5</span></div>
+    <div class="oc-badges"><span class="bdg b-green">Freigabe</span><span class="bdg b-slate">4× FE</span></div>
+    <div class="oc-meta"><span class="oc-prog" id="p_S06111">0/7</span></div>
   </button>
 <button class="oc lvl-amber" data-nr="S06160" data-level="amber"
       data-fg="1"
@@ -452,15 +452,15 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-badges"><span class="bdg b-green">Freigabe</span></div>
     <div class="oc-meta"><span class="oc-prog" id="p_S06690">0/3</span></div>
   </button>
-<button class="oc lvl-amber" data-nr="S06718" data-level="amber"
-      data-fg="0"
+<button class="oc lvl-green" data-nr="S06718" data-level="green"
+      data-fg="1"
       data-warn="0"
       data-abw="0"
       onclick="openCl('S06718')">
     <div class="oc-dot"></div>
     <div class="oc-main"><div class="oc-nr">S06718</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-badges"><span class="bdg b-amber">keine Zeichnung</span></div>
-    <div class="oc-meta"><span class="oc-prog" id="p_S06718">0/5</span></div>
+    <div class="oc-badges"><span class="bdg b-green">Freigabe</span><span class="bdg b-slate">1× FE</span></div>
+    <div class="oc-meta"><span class="oc-prog" id="p_S06718">0/6</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S06727" data-level="green"
       data-fg="1"
@@ -592,16 +592,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-badges"><span class="bdg b-green">Freigabe</span><span class="bdg b-slate">2× FE</span></div>
     <div class="oc-meta"><span class="oc-prog" id="p_S06916">0/8</span></div>
   </button>
-<button class="oc lvl-amber" data-nr="S06920" data-level="amber"
-      data-fg="0"
-      data-warn="0"
-      data-abw="0"
-      onclick="openCl('S06920')">
-    <div class="oc-dot"></div>
-    <div class="oc-main"><div class="oc-nr">S06920</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-badges"><span class="bdg b-amber">keine Zeichnung</span></div>
-    <div class="oc-meta"><span class="oc-prog" id="p_S06920">0/5</span></div>
-  </button>
 <button class="oc lvl-amber" data-nr="S06921" data-level="amber"
       data-fg="0"
       data-warn="0"
@@ -721,16 +711,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-main"><div class="oc-nr">S07023</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-badges"><span class="bdg b-green">Freigabe</span></div>
     <div class="oc-meta"><span class="oc-prog" id="p_S07023">0/5</span></div>
-  </button>
-<button class="oc lvl-amber" data-nr="S07024" data-level="amber"
-      data-fg="0"
-      data-warn="0"
-      data-abw="0"
-      onclick="openCl('S07024')">
-    <div class="oc-dot"></div>
-    <div class="oc-main"><div class="oc-nr">S07024</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-badges"><span class="bdg b-amber">keine Zeichnung</span></div>
-    <div class="oc-meta"><span class="oc-prog" id="p_S07024">0/5</span></div>
   </button>
 <button class="oc lvl-amber" data-nr="S07034" data-level="amber"
       data-fg="0"
@@ -932,15 +912,15 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-badges"><span class="bdg b-amber">keine Zeichnung</span></div>
     <div class="oc-meta"><span class="oc-prog" id="p_S07131">0/5</span></div>
   </button>
-<button class="oc lvl-amber" data-nr="S07139" data-level="amber"
-      data-fg="0"
+<button class="oc lvl-green" data-nr="S07139" data-level="green"
+      data-fg="1"
       data-warn="0"
       data-abw="0"
       onclick="openCl('S07139')">
     <div class="oc-dot"></div>
     <div class="oc-main"><div class="oc-nr">S07139</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-badges"><span class="bdg b-amber">keine Zeichnung</span></div>
-    <div class="oc-meta"><span class="oc-prog" id="p_S07139">0/5</span></div>
+    <div class="oc-badges"><span class="bdg b-green">Freigabe</span></div>
+    <div class="oc-meta"><span class="oc-prog" id="p_S07139">0/6</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S07142" data-level="green"
       data-fg="0"
@@ -1091,6 +1071,16 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-main"><div class="oc-nr">S07212</div><div class="oc-typ">Pivottür</div></div>
     <div class="oc-badges"><span class="bdg b-green">Freigabe</span></div>
     <div class="oc-meta"><span class="oc-prog" id="p_S07212">0/5</span></div>
+  </button>
+<button class="oc lvl-green" data-nr="S07223" data-level="green"
+      data-fg="0"
+      data-warn="0"
+      data-abw="0"
+      onclick="openCl('S07223')">
+    <div class="oc-dot"></div>
+    <div class="oc-main"><div class="oc-nr">S07223</div><div class="oc-typ">FORMAT-Tür</div></div>
+    <div class="oc-badges"><span class="bdg b-blue">FORMAT</span></div>
+    <div class="oc-meta"><span class="oc-prog" id="p_S07223">0/4</span></div>
   </button></div>
   <div class="empty" id="empty" style="display:none">Keine Aufträge für diesen Filter.</div>
 </div>
@@ -1585,18 +1575,18 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S06111" data-level="amber">
+<div class="checklist" id="cl_S06111" data-level="green">
   <div class="cl-head">
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S06111</span></div>
     <div class="cl-title">
-      <div class="cl-main">Schiebetür</div>
-      <div class="cl-sub">Keine Zeichnung</div>
+      <div class="cl-main">Schiebetür · 4 Festelemente</div>
+      <div class="cl-sub">Freigabe S06111 Pos.3.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
   <div class="l3-top">
     <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
+      <div class="l3-left-h">◳ Freigabezeichnung S06111 Pos.3.pdf</div>
       <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><defs>
   <pattern id="gSat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
     <rect width="6" height="6" fill="#eef4f8"/>
@@ -1611,22 +1601,22 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <rect width="10" height="10" fill="#dfe6ea"/>
     <line x1="0" y1="0" x2="0" y2="10" stroke="#9fb4c0" stroke-width="2"/>
   </pattern>
-</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><text x="72.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">ST</text><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
+</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="43.0" height="142" fill="#eeeeee" stroke="#0a0a0a" stroke-width="1.1"/><rect x="28.0" y="34" width="35.0" height="134" fill="url(#gKlar)" stroke="#c2c2c2" stroke-width="0.5"/><text x="45.5" y="48" font-size="9" text-anchor="middle" font-weight="700" fill="#555">FE</text><rect x="70.0" y="30" width="43.0" height="142" fill="#eeeeee" stroke="#0a0a0a" stroke-width="1.1"/><rect x="74.0" y="34" width="35.0" height="134" fill="url(#gKlar)" stroke="#c2c2c2" stroke-width="0.5"/><text x="91.5" y="48" font-size="9" text-anchor="middle" font-weight="700" fill="#555">FE</text><rect x="116.0" y="30" width="48.0" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><text x="140.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">ST</text><rect x="162.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="162.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="158.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><rect x="167.0" y="30" width="43.0" height="142" fill="#eeeeee" stroke="#0a0a0a" stroke-width="1.1"/><rect x="171.0" y="34" width="35.0" height="134" fill="url(#gKlar)" stroke="#c2c2c2" stroke-width="0.5"/><text x="188.5" y="48" font-size="9" text-anchor="middle" font-weight="700" fill="#555">FE</text><rect x="213.0" y="30" width="43.0" height="142" fill="#eeeeee" stroke="#0a0a0a" stroke-width="1.1"/><rect x="217.0" y="34" width="35.0" height="134" fill="url(#gKlar)" stroke="#c2c2c2" stroke-width="0.5"/><text x="234.5" y="48" font-size="9" text-anchor="middle" font-weight="700" fill="#555">FE</text><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
       
     </div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Schiebetür<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Schiebetür · 4 Festelemente<br>Phase: Bestellungen auslösen</div>
       </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
+      
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
     </div>
   </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
   <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (5)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: SLIDE-Griff (Klebegriff) geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="4"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label></div>
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (7)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: SLIDE-Griff (Klebegriff) geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="4"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="5"><span class="lcbx"></span><span class="lcbt">Montage-Stege verpackt (4× Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06111" data-idx="6"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x20 (Festelement ↔ Festelement)</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -1862,7 +1852,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Pivottür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Pivottür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -2009,7 +1999,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Pivottür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Pivottür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -2026,18 +2016,18 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S06718" data-level="amber">
+<div class="checklist" id="cl_S06718" data-level="green">
   <div class="cl-head">
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S06718</span></div>
     <div class="cl-title">
-      <div class="cl-main">Drehtür · 6 Felder / 2 Sp.</div>
-      <div class="cl-sub">Keine Zeichnung</div>
+      <div class="cl-main">Drehtür · 1 Festelement · 6 Felder / 2 Sp.</div>
+      <div class="cl-sub">Freigabe S06718.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
   <div class="l3-top">
     <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
+      <div class="l3-left-h">◳ Freigabezeichnung S06718.pdf</div>
       <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><defs>
   <pattern id="gSat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
     <rect width="6" height="6" fill="#eef4f8"/>
@@ -2052,22 +2042,22 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <rect width="10" height="10" fill="#dfe6ea"/>
     <line x1="0" y1="0" x2="0" y2="10" stroke="#9fb4c0" stroke-width="2"/>
   </pattern>
-</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><rect x="26.0" y="32.0" width="44.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="26.0" y="79.3" width="44.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="26.0" y="126.7" width="44.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="74.0" y="32.0" width="44.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="74.0" y="79.3" width="44.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="74.0" y="126.7" width="44.0" height="43.3" fill="url(#gKlar)" stroke="none"/><line x1="24.0" y1="77.3" x2="120.0" y2="77.3" stroke="#0a0a0a" stroke-width="1.5"/><line x1="24.0" y1="124.7" x2="120.0" y2="124.7" stroke="#0a0a0a" stroke-width="1.5"/><line x1="72.0" y1="30.0" x2="72.0" y2="172.0" stroke="#0a0a0a" stroke-width="1.5"/><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas · 6 Felder</text></svg></div>
+</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="88.1" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><rect x="26.0" y="32.0" width="40.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="26.0" y="79.3" width="40.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="26.0" y="126.7" width="40.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="70.0" y="32.0" width="40.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="70.0" y="79.3" width="40.0" height="43.3" fill="url(#gKlar)" stroke="none"/><rect x="70.0" y="126.7" width="40.0" height="43.3" fill="url(#gKlar)" stroke="none"/><line x1="24.0" y1="77.3" x2="112.1" y2="77.3" stroke="#0a0a0a" stroke-width="1.5"/><line x1="24.0" y1="124.7" x2="112.1" y2="124.7" stroke="#0a0a0a" stroke-width="1.5"/><line x1="68.0" y1="30.0" x2="68.0" y2="172.0" stroke="#0a0a0a" stroke-width="1.5"/><rect x="110.1" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="110.1" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="106.1" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><rect x="115.1" y="30" width="140.9" height="142" fill="#eeeeee" stroke="#0a0a0a" stroke-width="1.1"/><rect x="119.1" y="34" width="132.9" height="134" fill="url(#gKlar)" stroke="#c2c2c2" stroke-width="0.5"/><rect x="121.1" y="36.0" width="62.5" height="40.7" fill="url(#gKlar)" stroke="none"/><rect x="121.1" y="80.7" width="62.5" height="40.7" fill="url(#gKlar)" stroke="none"/><rect x="121.1" y="125.3" width="62.5" height="40.7" fill="url(#gKlar)" stroke="none"/><rect x="187.5" y="36.0" width="62.5" height="40.7" fill="url(#gKlar)" stroke="none"/><rect x="187.5" y="80.7" width="62.5" height="40.7" fill="url(#gKlar)" stroke="none"/><rect x="187.5" y="125.3" width="62.5" height="40.7" fill="url(#gKlar)" stroke="none"/><line x1="119.1" y1="78.7" x2="252.0" y2="78.7" stroke="#0a0a0a" stroke-width="1.5"/><line x1="119.1" y1="123.3" x2="252.0" y2="123.3" stroke="#0a0a0a" stroke-width="1.5"/><line x1="185.5" y1="34.0" x2="185.5" y2="168.0" stroke="#0a0a0a" stroke-width="1.5"/><text x="185.5" y="48" font-size="9" text-anchor="middle" font-weight="700" fill="#555">FE</text><text x="24" y="193" font-size="9" fill="#666">Klarglas · 6 Felder</text></svg></div>
       
     </div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · 6 Felder / 2 Sp.<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Drehtür · 1 Festelement · 6 Felder / 2 Sp.<br>Phase: Bestellungen auslösen</div>
       </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
+      
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
     </div>
   </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
   <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (5)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="3"><span class="lcbx"></span><span class="lcbt">2 Sprosse(n) waagerecht korrekt sitzend</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="4"><span class="lcbx"></span><span class="lcbt">1 Sprosse(n) senkrecht korrekt sitzend</span></label></div>
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (6)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="3"><span class="lcbx"></span><span class="lcbt">Montage-Stege verpackt (1× Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="4"><span class="lcbx"></span><span class="lcbt">2 Sprosse(n) waagerecht korrekt sitzend</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06718" data-idx="5"><span class="lcbx"></span><span class="lcbt">1 Sprosse(n) senkrecht korrekt sitzend</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -2499,7 +2489,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -2705,55 +2695,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
   <div class="l3-checks">
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (8)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="2"><span class="lcbx"></span><span class="lcbt">Türbreite 1000mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="4"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="5"><span class="lcbx"></span><span class="lcbt">Montage-Stege verpackt (2× Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="6"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x10 (Zarge ↔ Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06916" data-idx="7"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x20 (Festelement ↔ Festelement)</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
-<div class="checklist" id="cl_S06920" data-level="amber">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S06920</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür · Blockzarge</div>
-      <div class="cl-sub">Keine Zeichnung</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
-      <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><defs>
-  <pattern id="gSat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-    <rect width="6" height="6" fill="#eef4f8"/>
-    <line x1="0" y1="0" x2="0" y2="6" stroke="#b9cdd9" stroke-width="1.4"/>
-  </pattern>
-  <linearGradient id="gKlar" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#e8f1f7"/>
-    <stop offset="0.5" stop-color="#dceaf5"/>
-    <stop offset="1" stop-color="#cfe0ee"/>
-  </linearGradient>
-  <pattern id="gSpiegel" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
-    <rect width="10" height="10" fill="#dfe6ea"/>
-    <line x1="0" y1="0" x2="0" y2="10" stroke="#9fb4c0" stroke-width="2"/>
-  </pattern>
-</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><text x="72.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">DT</text><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
-      
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: in Arbeit DS+BR</div>
-      </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
-      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (5)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06920" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06920" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06920" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06920" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06920" data-idx="4"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -3349,55 +3290,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S07024" data-level="amber">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S07024</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür · Blockzarge</div>
-      <div class="cl-sub">Keine Zeichnung</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
-      <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><defs>
-  <pattern id="gSat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-    <rect width="6" height="6" fill="#eef4f8"/>
-    <line x1="0" y1="0" x2="0" y2="6" stroke="#b9cdd9" stroke-width="1.4"/>
-  </pattern>
-  <linearGradient id="gKlar" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#e8f1f7"/>
-    <stop offset="0.5" stop-color="#dceaf5"/>
-    <stop offset="1" stop-color="#cfe0ee"/>
-  </linearGradient>
-  <pattern id="gSpiegel" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
-    <rect width="10" height="10" fill="#dfe6ea"/>
-    <line x1="0" y1="0" x2="0" y2="10" stroke="#9fb4c0" stroke-width="2"/>
-  </pattern>
-</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><text x="72.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">DT</text><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
-      
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: in Arbeit DS+BR</div>
-      </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
-      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (5)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S07024" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07024" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07024" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07024" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: C-Griff Set geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07024" data-idx="4"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
 <div class="checklist" id="cl_S07034" data-level="amber">
   <div class="cl-head">
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S07034</span></div>
@@ -3724,7 +3616,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3773,7 +3665,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3920,7 +3812,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Pivottür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Pivottür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -4067,7 +3959,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -4116,7 +4008,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Schiebetür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Schiebetür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Satiniertes Glas prüfen</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -4214,7 +4106,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -4312,7 +4204,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -4361,7 +4253,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -4378,18 +4270,18 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S07139" data-level="amber">
+<div class="checklist" id="cl_S07139" data-level="green">
   <div class="cl-head">
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S07139</span></div>
     <div class="cl-title">
       <div class="cl-main">Drehtür · Blockzarge</div>
-      <div class="cl-sub">Keine Zeichnung</div>
+      <div class="cl-sub">Freigabe S07139.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
   <div class="l3-top">
     <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
+      <div class="l3-left-h">◳ Freigabezeichnung S07139.pdf</div>
       <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><defs>
   <pattern id="gSat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
     <rect width="6" height="6" fill="#eef4f8"/>
@@ -4410,16 +4302,16 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Zuschnitt AW + ED</div>
       </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
+      
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
     </div>
   </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
   <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (5)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="4"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label></div>
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (6)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07139" data-idx="4"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S07139" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -5161,10 +5053,59 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
+</div>
+<div class="checklist" id="cl_S07223" data-level="green">
+  <div class="cl-head">
+    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S07223</span></div>
+    <div class="cl-title">
+      <div class="cl-main">FORMAT-Tür</div>
+      <div class="cl-sub">FORMAT — genormt</div>
+    </div>
+    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
+  </div>
+  <div class="l3-top">
+    <div class="l3-left">
+      <div class="l3-left-h">◳ FORMAT-Tür — Optik-Skizze</div>
+      <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><defs>
+  <pattern id="gSat" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#eef4f8"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#b9cdd9" stroke-width="1.4"/>
+  </pattern>
+  <linearGradient id="gKlar" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e8f1f7"/>
+    <stop offset="0.5" stop-color="#dceaf5"/>
+    <stop offset="1" stop-color="#cfe0ee"/>
+  </linearGradient>
+  <pattern id="gSpiegel" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+    <rect width="10" height="10" fill="#dfe6ea"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#9fb4c0" stroke-width="2"/>
+  </pattern>
+</defs><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="url(#gKlar)" stroke="#0a0a0a" stroke-width="1.8"/><text x="72.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">FORMAT</text><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
+      
+    </div>
+    <div class="l3-right">
+      <div class="l3-aufbau">
+        <div class="l3-aufbau-h">Aufbau erkannt</div>
+        <div class="l3-aufbau-b">FORMAT-Tür<br>Phase: FORMAT fertigen DS+BR</div>
+      </div>
+      
+      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
+    </div>
+  </div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc na"><span class="lsd"></span>FORMAT — genormt</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
+  <div class="l3-checks">
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (4)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S07223" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07223" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07223" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07223" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: C-Griff Set geprüft</span></label></div>
+  </div>
+  <div class="cl-foot">
+    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
+    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
+    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
+  </div>
 </div></div>
 
 <script>
-var COUNTS={"S02933": 4, "S03071": 4, "S03808": 4, "S05475": 6, "S05711": 5, "S05975": 9, "S05980": 5, "S06082": 6, "S06083": 7, "S06084": 6, "S06111": 5, "S06160": 9, "S06445": 4, "S06453": 4, "S06525": 5, "S06588": 5, "S06594": 4, "S06683": 3, "S06690": 3, "S06718": 5, "S06727": 7, "S06780": 7, "S06783": 7, "S06785": 7, "S06814": 3, "S06843": 8, "S06846": 8, "S06868": 3, "S06892": 8, "S06895": 5, "S06897": 6, "S06898": 6, "S06916": 8, "S06920": 5, "S06921": 4, "S06922": 4, "S06927": 6, "S06969": 6, "S06973": 7, "S06983": 5, "S06986": 5, "S06987": 5, "S06988": 5, "S06991": 3, "S07015": 6, "S07023": 5, "S07024": 5, "S07034": 4, "S07056": 4, "S07058": 8, "S07059": 5, "S07073": 3, "S07075": 5, "S07077": 9, "S07078": 5, "S07080": 6, "S07086": 6, "S07087": 4, "S07088": 7, "S07089": 5, "S07090": 4, "S07091": 5, "S07106": 4, "S07111": 5, "S07112": 5, "S07116": 4, "S07131": 5, "S07139": 5, "S07142": 7, "S07144": 6, "S07156": 4, "S07157": 5, "S07158": 4, "S07159": 5, "S07170": 3, "S07176": 3, "S07178": 5, "S07179": 6, "S07183": 5, "S07184": 4, "S07185": 4, "S07209": 3, "S07212": 5};
+var COUNTS={"S02933": 4, "S03071": 4, "S03808": 4, "S05475": 6, "S05711": 5, "S05975": 9, "S05980": 5, "S06082": 6, "S06083": 7, "S06084": 6, "S06111": 7, "S06160": 9, "S06445": 4, "S06453": 4, "S06525": 5, "S06588": 5, "S06594": 4, "S06683": 3, "S06690": 3, "S06718": 6, "S06727": 7, "S06780": 7, "S06783": 7, "S06785": 7, "S06814": 3, "S06843": 8, "S06846": 8, "S06868": 3, "S06892": 8, "S06895": 5, "S06897": 6, "S06898": 6, "S06916": 8, "S06921": 4, "S06922": 4, "S06927": 6, "S06969": 6, "S06973": 7, "S06983": 5, "S06986": 5, "S06987": 5, "S06988": 5, "S06991": 3, "S07015": 6, "S07023": 5, "S07034": 4, "S07056": 4, "S07058": 8, "S07059": 5, "S07073": 3, "S07075": 5, "S07077": 9, "S07078": 5, "S07080": 6, "S07086": 6, "S07087": 4, "S07088": 7, "S07089": 5, "S07090": 4, "S07091": 5, "S07106": 4, "S07111": 5, "S07112": 5, "S07116": 4, "S07131": 5, "S07139": 6, "S07142": 7, "S07144": 6, "S07156": 4, "S07157": 5, "S07158": 4, "S07159": 5, "S07170": 3, "S07176": 3, "S07178": 5, "S07179": 6, "S07183": 5, "S07184": 4, "S07185": 4, "S07209": 3, "S07212": 5, "S07223": 4};
 var STORE="flynn_chk_v1";
 var chipF="all";
 var ODOO_URL="https://flynn42-odoo.odoo.com";
@@ -5222,7 +5163,7 @@ function closeCl(){
   document.getElementById('overview').style.display='block';
   document.getElementById('backBtn').style.display='none';
   document.getElementById('printBtn').style.display='none';
-  document.getElementById('phsub').textContent='83 Aufträge · Stand 02.06.2026';
+  document.getElementById('phsub').textContent='82 Aufträge · Stand 02.06.2026';
   document.querySelectorAll('.checklist').forEach(function(c){c.classList.remove('show');});
 }
 function setChip(el){
