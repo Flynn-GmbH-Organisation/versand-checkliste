@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLYNN Montageanleitung</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Barlow',sans-serif;background:#f5f3ee;color:#1a1a1a;min-height:100vh;}
+.header{background:#1a1a1a;color:#fff;padding:16px 20px;display:flex;align-items:flex-end;justify-content:space-between;}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;letter-spacing:3px;}
+.logo-sub{font-size:9px;font-weight:400;letter-spacing:2px;color:#888;text-transform:uppercase;margin-top:2px;}
+.badge{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:1px solid #fff;padding:3px 8px;}
+.card{background:#fff;border:1.5px solid #1a1a1a;margin:20px 16px;max-width:480px;}
+.card-hd{background:#1a1a1a;color:#fff;padding:8px 14px;}
+.card-hd-label{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#888;}
+.card-snr{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:40px;line-height:1;color:#fff;}
+.card-pos{font-size:12px;color:#888;margin-top:2px;}
+.anleitungen{padding:0;}
+.anl-item{border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:space-between;padding:14px 16px;gap:12px;}
+.anl-item:last-child{border-bottom:none;}
+.anl-titel{font-size:15px;font-weight:700;}
+.anl-btn{background:#1a1a1a;color:#fff;border:none;padding:10px 18px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;text-decoration:none;white-space:nowrap;}
+.anl-btn:hover{background:#333;}
+.hinweis{padding:16px;font-size:13px;color:#888;font-style:italic;}
+.loading{padding:40px 16px;text-align:center;color:#888;font-size:14px;}
+.error{padding:20px 16px;color:#c00;font-size:14px;}
+.footer{padding:20px 16px;font-size:11px;color:#aaa;text-align:center;letter-spacing:1px;text-transform:uppercase;}
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <div class="logo">FLYNN</div>
+    <div class="logo-sub">Lofttüren · Made in Germany</div>
+  </div>
+  <div class="badge">Montageanleitung</div>
+</div>
+
+<div id="content"><div class="loading">Lade Anleitungsdaten…</div></div>
+
+<div class="footer">flynn-gmbh.de · <span id="ft-key"></span></div>
+
+<script>
+(function(){
+  var hash = location.hash.replace('#','');
+  document.getElementById('ft-key').textContent = hash;
+
+  if(!hash){
+    document.getElementById('content').innerHTML =
+      '<div class="error">Kein Auftrag angegeben.<br>Bitte QR-Code erneut scannen.</div>';
+    return;
+  }
+
+  fetch('anleitungen.json?v=' + Date.now())
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var eintrag = data[hash];
+      if(!eintrag){
+        document.getElementById('content').innerHTML =
+          '<div class="error">Position <strong>' + hash + '</strong> nicht gefunden.<br>'
+          + 'Die Daten werden täglich aktualisiert.</div>';
+        return;
+      }
+
+      var parts = hash.split('-');
+      var snr   = parts[0];
+      var posNr = parts[1] || '1';
+
+      var html = '<div class="card">'
+        + '<div class="card-hd">'
+        + '<div class="card-hd-label">Auftragsnummer</div>'
+        + '<div class="card-snr">' + snr + '</div>'
+        + '<div class="card-pos">Position ' + posNr + '</div>'
+        + '</div>'
+        + '<div class="anleitungen">';
+
+      var links = eintrag.anleitungen || [];
+
+      if(links.length === 0){
+        html += '<div class="hinweis">Für diesen Türtyp liegt die Montageanleitung beim Beschlag bei.</div>';
+      } else {
+        for(var i=0; i<links.length; i++){
+          html += '<div class="anl-item">'
+            + '<div class="anl-titel">' + links[i].titel + '</div>'
+            + '<a class="anl-btn" href="' + links[i].url + '" target="_blank">Download</a>'
+            + '</div>';
+        }
+      }
+
+      html += '</div></div>';
+      document.getElementById('content').innerHTML = html;
+    })
+    .catch(function(){
+      document.getElementById('content').innerHTML =
+        '<div class="error">Fehler beim Laden der Daten.<br>Bitte Internetverbindung prüfen.</div>';
+    });
+})();
+</script>
+</body>
+</html>
