@@ -1151,5 +1151,17 @@
         "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
       }
     ]
+  },
+  "S06945-1": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
   }
 }

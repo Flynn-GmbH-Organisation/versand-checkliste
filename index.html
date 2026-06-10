@@ -239,7 +239,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
   <div class="ld"><svg width="14" height="10" viewBox="0 0 18 14" fill="none"><path d="M9 1L17 13H1L9 1Z" fill="white"/></svg></div>
   <div class="ph-brand">
     <h1>Versand-Checkliste</h1>
-    <div class="sub" id="phsub">79 Aufträge · Stand 10.06.2026</div>
+    <div class="sub" id="phsub">80 Aufträge · Stand 10.06.2026</div>
   </div>
   <div class="spacer"></div>
   <button class="back" id="backBtn" onclick="closeCl()">‹ Übersicht</button>
@@ -248,9 +248,9 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
 
 <div id="overview">
   <div class="stat-row">
-    <div class="stat">       <div class="v">79</div><div class="l">Aufträge gesamt</div></div>
+    <div class="stat">       <div class="v">80</div><div class="l">Aufträge gesamt</div></div>
     <div class="stat red">   <div class="v">3</div>  <div class="l">Kritisch (&gt;10 mm)</div></div>
-    <div class="stat amber"> <div class="v">36</div><div class="l">Prüfen</div></div>
+    <div class="stat amber"> <div class="v">37</div><div class="l">Prüfen</div></div>
     <div class="stat green"> <div class="v">40</div><div class="l">Ohne Befund</div></div>
   </div>
   <div class="toolbar">
@@ -259,7 +259,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
       <input id="q" type="text" placeholder="Auftragsnummer suchen…" oninput="applyFilter()" autocomplete="off">
     </div>
     <div class="chips">
-      <button class="chip active" data-f="all"   onclick="setChip(this)">Alle <span class="cn">79</span></button>
+      <button class="chip active" data-f="all"   onclick="setChip(this)">Alle <span class="cn">80</span></button>
       <button class="chip"        data-f="red"   onclick="setChip(this)">Kritisch <span class="cn">3</span></button>
       <button class="chip"        data-f="warn"  onclick="setChip(this)">Warnung</button>
       <button class="chip"        data-f="nofg"  onclick="setChip(this)">Ohne Zeichnung</button>
@@ -535,6 +535,15 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S06927</div><div class="oc-typ">FORMAT-Tür</div></div>
     <div class="oc-right"><span class="bdg b-blue">FORMAT</span><span class="oc-prog" id="p_S06927">0/8</span></div>
+  </button>
+<button class="oc lvl-amber" data-nr="S06945" data-level="amber"
+      data-fg="1"
+      data-warn="1"
+      data-abw="0"
+      onclick="openCl('S06945')">
+    <div class="oc-dot-col"></div>
+    <div class="oc-body"><div class="oc-nr">S06945</div><div class="oc-typ">Schiebetür</div></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-amber">Glas prüfen</span><span class="bdg b-slate">4× FE</span><span class="oc-prog" id="p_S06945">0/17</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S06986" data-level="green"
       data-fg="1"
@@ -2645,6 +2654,54 @@ inkl montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr=
   <div class="l3-checks">
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (8)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: C-Griff Set geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glas FORMAT auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="4"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL FORMAT sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="5"><span class="lcbx"></span><span class="lcbt">FORMAT-Maße 834×1972 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="6"><span class="lcbx"></span><span class="lcbt">V7888 WF Band (stumpf) verbaut + V7502 3D Aufnahme geprueft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06927" data-idx="7"><span class="lcbx"></span><span class="lcbt">FORMAT-Maße 709×1972 mm geprüft</span></label></div>
+  </div>
+  <div class="cl-foot">
+    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
+    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
+    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
+  </div>
+</div>
+<div class="checklist" id="cl_S06945" data-level="amber">
+  <div class="cl-head">
+    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S06945</span></div>
+    <div class="cl-title">
+      <div class="cl-main">Schiebetür · 4 Festelemente</div>
+      <div class="cl-sub">Freigabe S06945_B_NCS S-0804-y50r.pdf</div>
+    </div>
+    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
+  </div>
+
+  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S06945" data-pos="1" data-pos-ges="1" data-sped="WKS ZONE 4" data-montage="" data-url="anleitung.html#S06945-1">🖨 Etikett drucken</button></div>
+  <div class="l3-top">
+    <div class="l3-left">
+      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
+      <div class="l3-draw"><svg viewBox="0 0 365 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><defs>
+  <linearGradient id="gKl2" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e8f1f7"/>
+    <stop offset="1" stop-color="#cfe0ee"/>
+  </linearGradient>
+  <pattern id="gSat2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#eef4f8"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#b9cdd9" stroke-width="1.4"/>
+  </pattern>
+</defs><rect x="15" y="35" width="80" height="145" fill="url(#gSat2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1025×2848</text><line x1="15" y1="92.2" x2="95" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="121.5" x2="95" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="150.8" x2="95" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text><rect x="100" y="35" width="80" height="145" fill="url(#gSat2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="140.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="140.0" y="59" font-size="7" text-anchor="middle" fill="#555">825×2848</text><line x1="100" y1="92.2" x2="180" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="121.5" x2="180" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="150.8" x2="180" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><text x="140.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text><rect x="185" y="35" width="80" height="145" fill="url(#gSat2)" stroke="#0a0a0a" stroke-width="1.2"/><text x="225.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><line x1="185" y1="92.2" x2="265" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="185" y1="121.5" x2="265" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="185" y1="150.8" x2="265" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><text x="225.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text><rect x="270" y="35" width="80" height="145" fill="url(#gSat2)" stroke="#0a0a0a" stroke-width="1.2"/><text x="310.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><line x1="270" y1="92.2" x2="350" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="270" y1="121.5" x2="350" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="270" y1="150.8" x2="350" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><text x="310.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text></svg></div>
+      
+    </div>
+    <div class="l3-right">
+      <div class="l3-aufbau">
+        <div class="l3-aufbau-h">Aufbau erkannt</div>
+        <div class="l3-aufbau-b">Schiebetür · 4 Festelemente<br>Phase: Bestellungen auslösen</div>
+      </div>
+      <div class="l3-warn">⚠ Satiniertes Glas prüfen</div>
+      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
+    </div>
+  </div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
+  <div class="l3-checks">
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (17)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIDE-Griff (Klebegriff) geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06945" data-idx="3"><span class="lcbx"></span><span class="lcbt">Satiniertes Glas prüfen</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="4"><span class="lcbx"></span><span class="lcbt">Montage-Stege verpackt (4× Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="5"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x20 (Festelement ↔ Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="6"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 5768 x 2925 mm (BxH)
+
+Pro)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="7"><span class="lcbx"></span><span class="lcbt">Glas Schiebetür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="8"><span class="lcbx"></span><span class="lcbt">Oberfläche Schiebetür (RAL nach Wahl: NCS S) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="9"><span class="lcbx"></span><span class="lcbt">Schiebetür-Maße 1025×2848 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="10"><span class="lcbx"></span><span class="lcbt">DIN R Schiebetür kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="11"><span class="lcbx"></span><span class="lcbt">Laufschiene geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="12"><span class="lcbx"></span><span class="lcbt">Bodenführung verpackt</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="13"><span class="lcbx"></span><span class="lcbt">Schiebetür-Maße 825×2848 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="14"><span class="lcbx"></span><span class="lcbt">Glas Festelement auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="15"><span class="lcbx"></span><span class="lcbt">Oberfläche Festelement (RAL nach Wahl: NCS S) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06945" data-idx="16"><span class="lcbx"></span><span class="lcbt">3 Sprosse(n) FE waagerecht korrekt</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -5130,7 +5187,7 @@ Grif)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07276"
 </div></div>
 
 <script>
-var COUNTS={"S02720": 47, "S03071": 8, "S03808": 11, "S05475": 17, "S05711": 11, "S05975": 20, "S05980": 15, "S06083": 17, "S06084": 9, "S06111": 29, "S06396": 16, "S06445": 13, "S06453": 9, "S06473": 14, "S06588": 10, "S06683": 3, "S06690": 9, "S06718": 7, "S06727": 18, "S06780": 18, "S06783": 19, "S06785": 10, "S06814": 3, "S06843": 26, "S06846": 20, "S06892": 19, "S06895": 15, "S06921": 11, "S06922": 14, "S06927": 8, "S06986": 12, "S07056": 11, "S07058": 18, "S07059": 16, "S07073": 17, "S07075": 16, "S07077": 21, "S07078": 11, "S07086": 23, "S07087": 9, "S07088": 16, "S07089": 16, "S07090": 11, "S07091": 11, "S07111": 11, "S07112": 16, "S07116": 12, "S07131": 11, "S07139": 13, "S07144": 19, "S07156": 11, "S07157": 11, "S07158": 4, "S07159": 11, "S07170": 3, "S07178": 14, "S07179": 14, "S07183": 19, "S07184": 11, "S07185": 11, "S07190": 20, "S07209": 3, "S07212": 11, "S07223": 8, "S07225": 7, "S07231": 3, "S07234": 7, "S07235": 14, "S07241": 15, "S07245": 12, "S07252": 16, "S07254": 7, "S07257": 3, "S07258": 10, "S07263": 4, "S07273": 12, "S07274": 7, "S07275": 9, "S07276": 24};
+var COUNTS={"S02720": 47, "S03071": 8, "S03808": 11, "S05475": 17, "S05711": 11, "S05975": 20, "S05980": 15, "S06083": 17, "S06084": 9, "S06111": 29, "S06396": 16, "S06445": 13, "S06453": 9, "S06473": 14, "S06588": 10, "S06683": 3, "S06690": 9, "S06718": 7, "S06727": 18, "S06780": 18, "S06783": 19, "S06785": 10, "S06814": 3, "S06843": 26, "S06846": 20, "S06892": 19, "S06895": 15, "S06921": 11, "S06922": 14, "S06927": 8, "S06945": 17, "S06986": 12, "S07056": 11, "S07058": 18, "S07059": 16, "S07073": 17, "S07075": 16, "S07077": 21, "S07078": 11, "S07086": 23, "S07087": 9, "S07088": 16, "S07089": 16, "S07090": 11, "S07091": 11, "S07111": 11, "S07112": 16, "S07116": 12, "S07131": 11, "S07139": 13, "S07144": 19, "S07156": 11, "S07157": 11, "S07158": 4, "S07159": 11, "S07170": 3, "S07178": 14, "S07179": 14, "S07183": 19, "S07184": 11, "S07185": 11, "S07190": 20, "S07209": 3, "S07212": 11, "S07223": 8, "S07225": 7, "S07231": 3, "S07234": 7, "S07235": 14, "S07241": 15, "S07245": 12, "S07252": 16, "S07254": 7, "S07257": 3, "S07258": 10, "S07263": 4, "S07273": 12, "S07274": 7, "S07275": 9, "S07276": 24};
 var STORE="flynn_chk_v1";
 var chipF="all";
 var ODOO_URL="https://flynn42-odoo.odoo.com";
@@ -5188,7 +5245,7 @@ function closeCl(){
   document.getElementById('overview').style.display='block';
   document.getElementById('backBtn').style.display='none';
   document.getElementById('printBtn').style.display='none';
-  document.getElementById('phsub').textContent='79 Aufträge · Stand 10.06.2026';
+  document.getElementById('phsub').textContent='80 Aufträge · Stand 10.06.2026';
   document.querySelectorAll('.checklist').forEach(function(c){c.classList.remove('show');});
 }
 function setChip(el){
