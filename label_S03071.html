@@ -8,64 +8,49 @@
   body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #000; }
   @page { size: 102mm 152mm; margin: 6mm; }
   .etikett-seite {
-      width: 90mm;
-      min-height: 140mm;
-      display: flex;
-      flex-direction: column;
-      page-break-after: always;
-      overflow: hidden;
+      width: 90mm; min-height: 140mm;
+      display: flex; flex-direction: column;
+      page-break-after: always; overflow: hidden;
   }
-  .e-hdr { border-bottom: 1.5px solid #000; padding-bottom: 4px; margin-bottom: 4px; }
-  .e-snr  { font-size: 6mm; font-weight: 900; line-height: 1; letter-spacing: 0.3px; }
-  .e-sped { font-size: 3.5mm; font-weight: 700; margin-top: 1.5px; line-height: 1; }
-  .e-stichw { font-size: 3mm; margin-top: 1px; line-height: 1; }
+  .e-hdr { border-bottom: 2px solid #000; padding-bottom: 4px; margin-bottom: 5px; }
+  .e-snr  { font-size: 7mm; font-weight: 900; line-height: 1.05; letter-spacing: 0.4px; }
+  .e-sped { font-size: 4mm; font-weight: 700; margin-top: 2px; line-height: 1; }
+  .e-stichw { font-size: 3.2mm; margin-top: 1px; line-height: 1; }
   .e-typ {
       display: flex; align-items: center; gap: 2mm;
-      border-bottom: 0.5px solid #999;
-      padding-bottom: 2px; margin-bottom: 3px;
+      border-bottom: 0.5px solid #aaa;
+      padding-bottom: 3px; margin-bottom: 4px;
   }
-  .e-badge {
-      background: #000; color: #fff;
-      font-size: 2.8mm; font-weight: 700;
-      padding: 0.5px 1.5mm; white-space: nowrap;
-  }
-  .e-name { font-size: 2.6mm; line-height: 1.25; color: #222; }
+  .e-badge { background: #000; color: #fff;
+             font-size: 3.5mm; font-weight: 700;
+             padding: 1px 1.5mm; white-space: nowrap; }
+  .e-name { font-size: 2.8mm; line-height: 1.25; color: #222; }
   .e-svg {
-      flex: 0 0 48mm;
+      flex: 0 0 35mm;
       display: flex; align-items: center; justify-content: center;
-      border-bottom: 0.5px solid #999;
-      margin-bottom: 3px; padding-bottom: 2px;
-      overflow: hidden;
+      border-bottom: 0.5px solid #aaa;
+      margin-bottom: 4px; padding-bottom: 3px; overflow: hidden;
   }
-  .e-svg svg { max-width: 86mm; max-height: 44mm; }
-  .e-masse { font-size: 4.5mm; font-weight: 900; line-height: 1; margin-bottom: 2px; }
-  .e-info { font-size: 2.8mm; line-height: 1.5; color: #333; }
-  .e-infoblock {
-      flex: 1;
-      border-bottom: 0.5px solid #999;
-      padding-bottom: 3px; margin-bottom: 3px;
-  }
+  .e-svg svg { max-width: 86mm; max-height: 33mm; }
+  .e-infoblock { flex: 1; border-bottom: 0.5px solid #aaa;
+                 padding-bottom: 4px; margin-bottom: 4px; }
+  .e-masse { font-size: 6mm; font-weight: 900; line-height: 1.05; margin-bottom: 2px; }
+  .e-info { font-size: 3.8mm; color: #222; line-height: 1.6; }
   .e-footer {
       display: flex; align-items: flex-end;
-      justify-content: space-between;
-      min-height: 16mm;
+      justify-content: space-between; min-height: 34mm;
   }
-  .e-qr img { display: block; border: 0.3px solid #ccc; }
-  .e-qr-lbl { font-size: 2.2mm; text-align: center; color: #444; line-height: 1.3; margin-top: 1px; }
-  .e-qr-text {
-      font-size: 2.5mm; color: #333; line-height: 1.4;
-      border: 0.5px solid #aaa; padding: 2px 3px;
-      max-width: 40mm;
-  }
-  .e-pos { font-size: 2.4mm; color: #555; text-align: right; line-height: 1.6; }
-  .e-pos-nr { font-size: 3mm; font-weight: 700; }
+  .e-qr img { display: block; width: 30mm; height: 30mm; border: 0.3px solid #ddd; }
+  .e-qr-lbl { font-size: 2.5mm; text-align: center; color: #444; line-height: 1.3; margin-top: 1px; }
+  .e-qr-text { font-size: 3mm; color: #333; line-height: 1.5;
+               border: 0.5px solid #aaa; padding: 3px 4px; max-width: 45mm; }
+  .e-pos { font-size: 2.8mm; color: #555; text-align: right; line-height: 1.6; }
+  .e-pos-nr { font-size: 4mm; font-weight: 900; color: #000; }
   @media screen {
-      body { background: #e8e8e8; padding: 10px; }
+      body { background: #d0d0d0; padding: 12px; }
       .etikett-seite {
-          background: #fff;
-          box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
-          margin: 10px auto;
-          padding: 6mm;
+          background: #fff; padding: 6mm; margin: 10px auto;
+          box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
       }
   }
   @media print {
@@ -75,6 +60,6 @@
   </style>
 </head>
 <body>
-<div style="page-break-after:avoid"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S03071_1</div><div class='e-stichw'>Montage durch Flynn</div></div><div class='e-typ'><span class='e-badge'>PIV</span><span class='e-name'>LOFT Pivottür | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">PIV</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">1430×2309</text><rect x="83.0" y="54" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">1430×2309</text></svg></div><div class='e-infoblock'><div class='e-masse'>1430 × 2309 mm</div><div class='e-info'>mit SLIM-Griff 1100<br>Klarglas<br>RAL nach Wahl: NCS-S-2005-Y30 matt Feinstruktur</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0AQAAAAAVtjufAAABrklEQVR4nM2XMY4cSQwEg8L6WT/Y/z/rfpD1gpBRqwMOEGQsCJzGmEHTiOrOSSbZI7/73B+/LcPfV5+Zc+Gee2cOl5k5i/wonHsI9s7nK2zxP2DCKellTO9hssoHyDieDGPPdzh/5ueAU/js5FucP/Dl3HDw0DseZO//HQfyn9KF/LPFR1UkhliNavf4gZiAhvRdL/KNJpYHb5Jkk18pbTRSo13VR5SQogbCKh8ltW2gbeyq/pXWvFOSFtzVv5RIqm1oV/UpWDQUSQyr/oem+vUk0MoqP5SGANEGuql/kjxhmmJMVv2T0EojJjbZ9Q8RmyRaiHXX/0l9ElEt2dXfJJUqsWiz6s8mpapgIiz7v76fCNRWdvMhRhIsfs2A1fnVVFNrqnR3Purr3qSYEHfzP08aacCynf+JrRi+mpms9m8CvOkbWstufkb6GouYFNz1T0NLUChCVu//7W8F0kbirv68xcpKoE1297f8Gr305bSb+f/eX/JZ5OQecidn+/3iek8HjkyBzzX+69/U51Rol/M5mhecNabZ3j8h71tIKZv7wwf+ewxv0Pgdzv9V/wkfq7XuJFID/wAAAABJRU5ErkJggg==' width='32' height='32'><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 1</span></div></div></div></div>
+<div style="page-break-after:avoid"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S03071_1</div><div class='e-stichw'>Montage durch Flynn</div></div><div class='e-typ'><span class='e-badge'>PIV</span><span class='e-name'>LOFT Pivottür | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">PIV</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">1430×2309</text><rect x="83.0" y="54" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">1430×2309</text></svg></div><div class='e-infoblock'><div class='e-masse'>1430 × 2309 mm</div><div class='e-info'>mit SLIM-Griff 1100<br>Klarglas<br>RAL nach Wahl: NCS-S-2005-Y30 matt Feinstruktur</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAADuUlEQVR4nO2cTW7bQAyF31QGspQAH8BHUa6WI/UG0o00ywAjsAuSQ0ppN2kN28XjIshI88ESQPB/VATfk/XHN0GAJEmSJE9kLSbv2IteXcsFWKe93wCwToDvvDzuaUk+HQmRbRAREcEsDfoHGEREGkR0CWDWLSJKLK/1niTvTZppqRfIxwRTJDU802Ca86Fb3Cy95HuSvAepdgjAIJg3QCT9sWu2T8SWM+0QyT+Sg5R3AMAoUsrts8jHrakbM1P173+T5KuTqhee4FtMXeaf1yaob1LmDVLWAgjqFcAoAOqjnpbks5KWfgFwrwYA5R0AUC/qvHS5llJKmf7+N0n+P+TFTAsAoO5FUPcCjA1QszQ2yHprENSwV496WpLPSPaYGp69+zIH0dLO+xhTk0zk2Fwt6gVqeBZYvi8fNxF1aOsEmIZV1hhJJtH64jKKmAdTHYq6o92IWqQsI+0QySSmG5s7rx5YywLXsOTGNoA6RPIoJ/UxBXFjpFuWZJsa4yGSJ7G22OaqEu2zrlJWmB6bE6xTk8ziIY6FQtB26wbPxvpdc2ONvozkSaIzb/+NPQAabQntpnmqb3r1Wu9J8n6kujFP8FuPjI4GCrbF8zfqEMkk5rc2aFXII+mhl6R7Rh8hNhgPkUziIx559kODaImRtFEkVbGZl5HM0uc59iLrrVkbf50GAHWCoF6lzAsgaxma7kO9tld7T5L3I93wSI9zMGRzc5yFtVSfdohkFnNZW64FpWxM2xwaD6HHTYyHSCbx9vwg3p73bkY3UKnrsUSI/VrvSfJ+5MEOoauPuA6h16l1CdaHSJ4lDI9dGL2DP0tcs1NCvo++jGSS7KO6uelBkbmxFC0xHiJ5ltTXiDr17McTQ31yoERfRjJLxD6HErWF2BEPoTdj2XMleZQvZxQjOUNMVufz06wPkTyK9Tq8v5qOuKqkmlFMhjAeIpnkfCT6NEodU0N9MoR9e5JHSfPUMe2KQ40xqkfRDqEOkexinqn3NRYAMWqmWxb0OSMMtEMkTyJJtjzWCJunjmpjlJBoh0gmiR5GHGeN5MwCpX7Mw4690g6RTJK/g7Yd/ZbPU8c8SGRt1CGSLjp0VoChARhamWX37zjUNynzsl9gH5XZi235+ainJfmM5G9rjLndih5d60x+Y7+M5EkOOuSt1X4jTXykM4qMh0h+Ib0q9Gkf7Jx9iZ6NAfXNYup1euzTknwu8pCXbac0zR2aqZT1OpiXkTzI4TtoEByW8eEzbZ9JvvZa70mSJMnnJX8B9N866josOPQAAAAASUVORK5CYII='><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 1</span></div></div></div></div>
 </body>
 </html>

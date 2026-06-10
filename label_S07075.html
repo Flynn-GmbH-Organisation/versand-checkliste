@@ -8,64 +8,49 @@
   body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #000; }
   @page { size: 102mm 152mm; margin: 6mm; }
   .etikett-seite {
-      width: 90mm;
-      min-height: 140mm;
-      display: flex;
-      flex-direction: column;
-      page-break-after: always;
-      overflow: hidden;
+      width: 90mm; min-height: 140mm;
+      display: flex; flex-direction: column;
+      page-break-after: always; overflow: hidden;
   }
-  .e-hdr { border-bottom: 1.5px solid #000; padding-bottom: 4px; margin-bottom: 4px; }
-  .e-snr  { font-size: 6mm; font-weight: 900; line-height: 1; letter-spacing: 0.3px; }
-  .e-sped { font-size: 3.5mm; font-weight: 700; margin-top: 1.5px; line-height: 1; }
-  .e-stichw { font-size: 3mm; margin-top: 1px; line-height: 1; }
+  .e-hdr { border-bottom: 2px solid #000; padding-bottom: 4px; margin-bottom: 5px; }
+  .e-snr  { font-size: 7mm; font-weight: 900; line-height: 1.05; letter-spacing: 0.4px; }
+  .e-sped { font-size: 4mm; font-weight: 700; margin-top: 2px; line-height: 1; }
+  .e-stichw { font-size: 3.2mm; margin-top: 1px; line-height: 1; }
   .e-typ {
       display: flex; align-items: center; gap: 2mm;
-      border-bottom: 0.5px solid #999;
-      padding-bottom: 2px; margin-bottom: 3px;
+      border-bottom: 0.5px solid #aaa;
+      padding-bottom: 3px; margin-bottom: 4px;
   }
-  .e-badge {
-      background: #000; color: #fff;
-      font-size: 2.8mm; font-weight: 700;
-      padding: 0.5px 1.5mm; white-space: nowrap;
-  }
-  .e-name { font-size: 2.6mm; line-height: 1.25; color: #222; }
+  .e-badge { background: #000; color: #fff;
+             font-size: 3.5mm; font-weight: 700;
+             padding: 1px 1.5mm; white-space: nowrap; }
+  .e-name { font-size: 2.8mm; line-height: 1.25; color: #222; }
   .e-svg {
-      flex: 0 0 48mm;
+      flex: 0 0 35mm;
       display: flex; align-items: center; justify-content: center;
-      border-bottom: 0.5px solid #999;
-      margin-bottom: 3px; padding-bottom: 2px;
-      overflow: hidden;
+      border-bottom: 0.5px solid #aaa;
+      margin-bottom: 4px; padding-bottom: 3px; overflow: hidden;
   }
-  .e-svg svg { max-width: 86mm; max-height: 44mm; }
-  .e-masse { font-size: 4.5mm; font-weight: 900; line-height: 1; margin-bottom: 2px; }
-  .e-info { font-size: 2.8mm; line-height: 1.5; color: #333; }
-  .e-infoblock {
-      flex: 1;
-      border-bottom: 0.5px solid #999;
-      padding-bottom: 3px; margin-bottom: 3px;
-  }
+  .e-svg svg { max-width: 86mm; max-height: 33mm; }
+  .e-infoblock { flex: 1; border-bottom: 0.5px solid #aaa;
+                 padding-bottom: 4px; margin-bottom: 4px; }
+  .e-masse { font-size: 6mm; font-weight: 900; line-height: 1.05; margin-bottom: 2px; }
+  .e-info { font-size: 3.8mm; color: #222; line-height: 1.6; }
   .e-footer {
       display: flex; align-items: flex-end;
-      justify-content: space-between;
-      min-height: 16mm;
+      justify-content: space-between; min-height: 34mm;
   }
-  .e-qr img { display: block; border: 0.3px solid #ccc; }
-  .e-qr-lbl { font-size: 2.2mm; text-align: center; color: #444; line-height: 1.3; margin-top: 1px; }
-  .e-qr-text {
-      font-size: 2.5mm; color: #333; line-height: 1.4;
-      border: 0.5px solid #aaa; padding: 2px 3px;
-      max-width: 40mm;
-  }
-  .e-pos { font-size: 2.4mm; color: #555; text-align: right; line-height: 1.6; }
-  .e-pos-nr { font-size: 3mm; font-weight: 700; }
+  .e-qr img { display: block; width: 30mm; height: 30mm; border: 0.3px solid #ddd; }
+  .e-qr-lbl { font-size: 2.5mm; text-align: center; color: #444; line-height: 1.3; margin-top: 1px; }
+  .e-qr-text { font-size: 3mm; color: #333; line-height: 1.5;
+               border: 0.5px solid #aaa; padding: 3px 4px; max-width: 45mm; }
+  .e-pos { font-size: 2.8mm; color: #555; text-align: right; line-height: 1.6; }
+  .e-pos-nr { font-size: 4mm; font-weight: 900; color: #000; }
   @media screen {
-      body { background: #e8e8e8; padding: 10px; }
+      body { background: #d0d0d0; padding: 12px; }
       .etikett-seite {
-          background: #fff;
-          box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
-          margin: 10px auto;
-          padding: 6mm;
+          background: #fff; padding: 6mm; margin: 10px auto;
+          box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
       }
   }
   @media print {
@@ -75,6 +60,6 @@
   </style>
 </head>
 <body>
-<div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_1</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>ST</span><span class='e-name'>LOFT Schiebetür | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">905×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">905×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>905 × 2388 mm</div><div class='e-info'>DIN L<br>mit SLIDE-Griff 160 (Klebegriff)<br>Klarglas</div></div><div class='e-footer'><div class='e-qr-text'>Montageanleitung<br>liegt dem Beschlag bei</div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 3</span></div></div></div></div><div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_2</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>ST</span><span class='e-name'>LOFT Schiebetür | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">905×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">905×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>905 × 2388 mm</div><div class='e-info'>DIN R<br>mit SLIDE-Griff 160 (Klebegriff)<br>Klarglas</div></div><div class='e-footer'><div class='e-qr-text'>Montageanleitung<br>liegt dem Beschlag bei</div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>2 / 3</span></div></div></div></div><div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_3</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FE</span><span class='e-name'>LOFT Festelement | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="#efefef" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">855×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">855×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>855 × 2388 mm</div><div class='e-info'>Klarglas</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0AQAAAAAVtjufAAABpUlEQVR4nNWYMa7cQAxDn4L0b26w9z/W3oA+AVPMpvjABwIEKhIXBqyClimJ4njKd9fz49sw/HvxmTnPzGHmeQ5zZuYs4tsivE8jzxHbvfx/wsjxfXyOGDjjKj7A+9VRHib+Fc4f8H2PE3hldvGprYitllRbs4U/HfBL6AHfe/m3LcWKTWvbruVPBavQirnPi/iF1gZMJKB7/NObfLC1SU2zyo+GEEOrWFbxQwACQpI2bPJTDKYNiQZY7H/axmJs2sQku/xILJRQbN3lH2IJ2AQkXe1/bs+3n3txtb4Y0bQRorqrD5/CtkRKdbV/5A5Bf1OU7PKP8Yobd7jMav6phLTY0Pshq/UtMe0txi3HJv8SeoeM3A7d1YdSlcaauKs/pn5Ev6Sl7up/TQANVQy79c3d7URosMv93yQJcoctrM+vjbSp1PvKVfxUae/+Ddv+R1JMTULB1fzbu4IvdLC7/Q9YuIsF0V3/ZitFQNtu5y/XYVk/JmjTH97zxQMvBk4Z4vPaPF+gVnNNboPr/F8DlFiju/oGSPCqUD5OaO989G34v/k/8Avud6lHg6cucgAAAABJRU5ErkJggg==' width='32' height='32'><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>3 / 3 (1/2)</span></div></div></div></div><div style="page-break-after:avoid"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_3</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FE</span><span class='e-name'>LOFT Festelement | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="#efefef" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">855×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">855×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>855 × 2388 mm</div><div class='e-info'>Klarglas</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0AQAAAAAVtjufAAABpUlEQVR4nNWYMa7cQAxDn4L0b26w9z/W3oA+AVPMpvjABwIEKhIXBqyClimJ4njKd9fz49sw/HvxmTnPzGHmeQ5zZuYs4tsivE8jzxHbvfx/wsjxfXyOGDjjKj7A+9VRHib+Fc4f8H2PE3hldvGprYitllRbs4U/HfBL6AHfe/m3LcWKTWvbruVPBavQirnPi/iF1gZMJKB7/NObfLC1SU2zyo+GEEOrWFbxQwACQpI2bPJTDKYNiQZY7H/axmJs2sQku/xILJRQbN3lH2IJ2AQkXe1/bs+3n3txtb4Y0bQRorqrD5/CtkRKdbV/5A5Bf1OU7PKP8Yobd7jMav6phLTY0Pshq/UtMe0txi3HJv8SeoeM3A7d1YdSlcaauKs/pn5Ev6Sl7up/TQANVQy79c3d7URosMv93yQJcoctrM+vjbSp1PvKVfxUae/+Ddv+R1JMTULB1fzbu4IvdLC7/Q9YuIsF0V3/ZitFQNtu5y/XYVk/JmjTH97zxQMvBk4Z4vPaPF+gVnNNboPr/F8DlFiju/oGSPCqUD5OaO989G34v/k/8Avud6lHg6cucgAAAABJRU5ErkJggg==' width='32' height='32'><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>3 / 3 (2/2)</span></div></div></div></div>
+<div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_1</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>ST</span><span class='e-name'>LOFT Schiebetür | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">905×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">905×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>905 × 2388 mm</div><div class='e-info'>DIN L<br>mit SLIDE-Griff 160 (Klebegriff)<br>Klarglas</div></div><div class='e-footer'><div class='e-qr-text'>Montageanleitung<br>liegt dem<br>Beschlag bei</div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 3</span></div></div></div></div><div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_2</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>ST</span><span class='e-name'>LOFT Schiebetür | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">905×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">905×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>905 × 2388 mm</div><div class='e-info'>DIN R<br>mit SLIDE-Griff 160 (Klebegriff)<br>Klarglas</div></div><div class='e-footer'><div class='e-qr-text'>Montageanleitung<br>liegt dem<br>Beschlag bei</div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>2 / 3</span></div></div></div></div><div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_3</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FE</span><span class='e-name'>LOFT Festelement | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="#efefef" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">855×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">855×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>855 × 2388 mm</div><div class='e-info'>Klarglas</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAADzklEQVR4nO2dQa6bQAyGPxektyRSDpCjkBv0TL0ZHKU3GJaVBrmL8cyYZNWqUUJlL1DI41NAsux/bA9PlL+z9dtfghBkkEEG+UBuYnZnb59ARERYL3s7HalXju+72yA/jkQ1DaqqqsyqJbPpwqCqmlHVDDAocxrKJYVYzvWcQb6atNCyjTBrRu4Aq4zIfftSZs3oMmVK0Lq/+W6D/GxSf8iXqqZdSuCBXVhLVnvVbwZ5bnJ8/GLWXYAhC9Mv0fWWR+YFBMb8b34zyP+LPOihBHaossc00pTpp6GHgnwibTUGDGqHbUTugGmkn19aTlcREbm8826D/DRyhKmVGbddlG0XmDKAfdL1llE28AXJcz1nkK8jLUcBJYNVJQ0+v2l+vC5yWZCOnEwq6wKUwLNg6339ccuUhLZe9prutqgxBunMNHUaLOaYS/m6oy5VU+syaT2c6zmDfB1Z11tpUF2wYFTq1As9oZnYVk0QPhTk0aybMfnaj2U1qjJapmye01of4UNBNiuRhhp4TD+r1rA0ZXqUMiLqQ0F6U7NM7bkOeui5mh7qTbPIZUEezdwntW59ApisOm2f8KXs8KEgj1adpsWhpozaksxOk7lP1IeCPFrxIYtDQIs5T6c1IhGaOsiDmQ/VhGb6ua3Bes1objUAjTgUpLORMufBoKw3Bfgl1tPYLuh6sb/KemvL/+2az/acQb6O9H0wpr6ir7LHCkJ4eRR6KMiDmaauK/riSJraFMjky0W1UhR6KEhnvQ/WhbXpoUSNOVgNoA+shQ8FWW0EdmFO+6hsAAy+7bFeEjKna4btqjA1tXSu5wzydSQPecuVF61sDT6htZJjxKEgq/VeR2nKtzZ+ldg2GVI7Z9EvC/LRvB5S1dpzbYfk5ZEfIjrXcwb5OtLNoLm+RtnYqjW19fmhhRq5woeCrGaRBto8Na4Fa5e0qaHW3w8fCrKZ5Sg32FE32Beri34/JBt6KEhvT/s1eqGx7+ZwjqRVbJ/rOYN8Hel8qBYae7H6OE9dV/6hh4I82lNfI+E2lFl+w/dEIg4FeTR1lqCuxvoIY/uu7esIPRTkwWp8wRWme2nIVFDbiN/f6BA+FKQj67A0m4hqArlvI/Zqhj6dn1pHNva5BunN6SG/UbHufXXj1Qn8ded6ziBfRx7fYbWXprzM6YoAAttY3vYh6wV0/Z7Q9TK86W6D/ETy6ENDZk5XewVaGXllHwVA7dOYZdZ33W2Qn0ge3wubn4S169v3NBZr+yC9+XVZap2zxKF9dtySH+uyIL3VqcQ/tvhfC0EGGeQ/In8DcVf0LpKJMdsAAAAASUVORK5CYII='><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>3 / 3 (1/2)</span></div></div></div></div><div style="page-break-after:avoid"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07075_3</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FE</span><span class='e-name'>LOFT Festelement | UNIKAT</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="#efefef" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">855×2388</text><line x1="0" y1="63.3" x2="90" y2="63.3" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="94.7" x2="90" y2="94.7" stroke="#0a0a0a" stroke-width="1.2"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">855×2388</text></svg></div><div class='e-infoblock'><div class='e-masse'>855 × 2388 mm</div><div class='e-info'>Klarglas</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAADzklEQVR4nO2dQa6bQAyGPxektyRSDpCjkBv0TL0ZHKU3GJaVBrmL8cyYZNWqUUJlL1DI41NAsux/bA9PlL+z9dtfghBkkEEG+UBuYnZnb59ARERYL3s7HalXju+72yA/jkQ1DaqqqsyqJbPpwqCqmlHVDDAocxrKJYVYzvWcQb6atNCyjTBrRu4Aq4zIfftSZs3oMmVK0Lq/+W6D/GxSf8iXqqZdSuCBXVhLVnvVbwZ5bnJ8/GLWXYAhC9Mv0fWWR+YFBMb8b34zyP+LPOihBHaossc00pTpp6GHgnwibTUGDGqHbUTugGmkn19aTlcREbm8826D/DRyhKmVGbddlG0XmDKAfdL1llE28AXJcz1nkK8jLUcBJYNVJQ0+v2l+vC5yWZCOnEwq6wKUwLNg6339ccuUhLZe9prutqgxBunMNHUaLOaYS/m6oy5VU+syaT2c6zmDfB1Z11tpUF2wYFTq1As9oZnYVk0QPhTk0aybMfnaj2U1qjJapmye01of4UNBNiuRhhp4TD+r1rA0ZXqUMiLqQ0F6U7NM7bkOeui5mh7qTbPIZUEezdwntW59ApisOm2f8KXs8KEgj1adpsWhpozaksxOk7lP1IeCPFrxIYtDQIs5T6c1IhGaOsiDmQ/VhGb6ua3Bes1objUAjTgUpLORMufBoKw3Bfgl1tPYLuh6sb/KemvL/+2az/acQb6O9H0wpr6ir7LHCkJ4eRR6KMiDmaauK/riSJraFMjky0W1UhR6KEhnvQ/WhbXpoUSNOVgNoA+shQ8FWW0EdmFO+6hsAAy+7bFeEjKna4btqjA1tXSu5wzydSQPecuVF61sDT6htZJjxKEgq/VeR2nKtzZ+ldg2GVI7Z9EvC/LRvB5S1dpzbYfk5ZEfIjrXcwb5OtLNoLm+RtnYqjW19fmhhRq5woeCrGaRBto8Na4Fa5e0qaHW3w8fCrKZ5Sg32FE32Beri34/JBt6KEhvT/s1eqGx7+ZwjqRVbJ/rOYN8Hel8qBYae7H6OE9dV/6hh4I82lNfI+E2lFl+w/dEIg4FeTR1lqCuxvoIY/uu7esIPRTkwWp8wRWme2nIVFDbiN/f6BA+FKQj67A0m4hqArlvI/Zqhj6dn1pHNva5BunN6SG/UbHufXXj1Qn8ded6ziBfRx7fYbWXprzM6YoAAttY3vYh6wV0/Z7Q9TK86W6D/ETy6ENDZk5XewVaGXllHwVA7dOYZdZ33W2Qn0ge3wubn4S169v3NBZr+yC9+XVZap2zxKF9dtySH+uyIL3VqcQ/tvhfC0EGGeQ/In8DcVf0LpKJMdsAAAAASUVORK5CYII='><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>3 / 3 (2/2)</span></div></div></div></div>
 </body>
 </html>

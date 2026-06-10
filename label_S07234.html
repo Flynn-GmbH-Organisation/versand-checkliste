@@ -8,64 +8,49 @@
   body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #000; }
   @page { size: 102mm 152mm; margin: 6mm; }
   .etikett-seite {
-      width: 90mm;
-      min-height: 140mm;
-      display: flex;
-      flex-direction: column;
-      page-break-after: always;
-      overflow: hidden;
+      width: 90mm; min-height: 140mm;
+      display: flex; flex-direction: column;
+      page-break-after: always; overflow: hidden;
   }
-  .e-hdr { border-bottom: 1.5px solid #000; padding-bottom: 4px; margin-bottom: 4px; }
-  .e-snr  { font-size: 6mm; font-weight: 900; line-height: 1; letter-spacing: 0.3px; }
-  .e-sped { font-size: 3.5mm; font-weight: 700; margin-top: 1.5px; line-height: 1; }
-  .e-stichw { font-size: 3mm; margin-top: 1px; line-height: 1; }
+  .e-hdr { border-bottom: 2px solid #000; padding-bottom: 4px; margin-bottom: 5px; }
+  .e-snr  { font-size: 7mm; font-weight: 900; line-height: 1.05; letter-spacing: 0.4px; }
+  .e-sped { font-size: 4mm; font-weight: 700; margin-top: 2px; line-height: 1; }
+  .e-stichw { font-size: 3.2mm; margin-top: 1px; line-height: 1; }
   .e-typ {
       display: flex; align-items: center; gap: 2mm;
-      border-bottom: 0.5px solid #999;
-      padding-bottom: 2px; margin-bottom: 3px;
+      border-bottom: 0.5px solid #aaa;
+      padding-bottom: 3px; margin-bottom: 4px;
   }
-  .e-badge {
-      background: #000; color: #fff;
-      font-size: 2.8mm; font-weight: 700;
-      padding: 0.5px 1.5mm; white-space: nowrap;
-  }
-  .e-name { font-size: 2.6mm; line-height: 1.25; color: #222; }
+  .e-badge { background: #000; color: #fff;
+             font-size: 3.5mm; font-weight: 700;
+             padding: 1px 1.5mm; white-space: nowrap; }
+  .e-name { font-size: 2.8mm; line-height: 1.25; color: #222; }
   .e-svg {
-      flex: 0 0 48mm;
+      flex: 0 0 35mm;
       display: flex; align-items: center; justify-content: center;
-      border-bottom: 0.5px solid #999;
-      margin-bottom: 3px; padding-bottom: 2px;
-      overflow: hidden;
+      border-bottom: 0.5px solid #aaa;
+      margin-bottom: 4px; padding-bottom: 3px; overflow: hidden;
   }
-  .e-svg svg { max-width: 86mm; max-height: 44mm; }
-  .e-masse { font-size: 4.5mm; font-weight: 900; line-height: 1; margin-bottom: 2px; }
-  .e-info { font-size: 2.8mm; line-height: 1.5; color: #333; }
-  .e-infoblock {
-      flex: 1;
-      border-bottom: 0.5px solid #999;
-      padding-bottom: 3px; margin-bottom: 3px;
-  }
+  .e-svg svg { max-width: 86mm; max-height: 33mm; }
+  .e-infoblock { flex: 1; border-bottom: 0.5px solid #aaa;
+                 padding-bottom: 4px; margin-bottom: 4px; }
+  .e-masse { font-size: 6mm; font-weight: 900; line-height: 1.05; margin-bottom: 2px; }
+  .e-info { font-size: 3.8mm; color: #222; line-height: 1.6; }
   .e-footer {
       display: flex; align-items: flex-end;
-      justify-content: space-between;
-      min-height: 16mm;
+      justify-content: space-between; min-height: 34mm;
   }
-  .e-qr img { display: block; border: 0.3px solid #ccc; }
-  .e-qr-lbl { font-size: 2.2mm; text-align: center; color: #444; line-height: 1.3; margin-top: 1px; }
-  .e-qr-text {
-      font-size: 2.5mm; color: #333; line-height: 1.4;
-      border: 0.5px solid #aaa; padding: 2px 3px;
-      max-width: 40mm;
-  }
-  .e-pos { font-size: 2.4mm; color: #555; text-align: right; line-height: 1.6; }
-  .e-pos-nr { font-size: 3mm; font-weight: 700; }
+  .e-qr img { display: block; width: 30mm; height: 30mm; border: 0.3px solid #ddd; }
+  .e-qr-lbl { font-size: 2.5mm; text-align: center; color: #444; line-height: 1.3; margin-top: 1px; }
+  .e-qr-text { font-size: 3mm; color: #333; line-height: 1.5;
+               border: 0.5px solid #aaa; padding: 3px 4px; max-width: 45mm; }
+  .e-pos { font-size: 2.8mm; color: #555; text-align: right; line-height: 1.6; }
+  .e-pos-nr { font-size: 4mm; font-weight: 900; color: #000; }
   @media screen {
-      body { background: #e8e8e8; padding: 10px; }
+      body { background: #d0d0d0; padding: 12px; }
       .etikett-seite {
-          background: #fff;
-          box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
-          margin: 10px auto;
-          padding: 6mm;
+          background: #fff; padding: 6mm; margin: 10px auto;
+          box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
       }
   }
   @media print {
@@ -75,6 +60,6 @@
   </style>
 </head>
 <body>
-<div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07234_1</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FT stumpf</span><span class='e-name'>FORMAT STUMPF | LOFT Drehtür für stumpfe Holz-Zargen</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FT stumpf (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">959×1972</text><line x1="0" y1="55.5" x2="90" y2="55.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="79.0" x2="90" y2="79.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="102.5" x2="90" y2="102.5" stroke="#0a0a0a" stroke-width="1.2"/><rect x="88.0" y="39" width="3" height="10" fill="#0a0a0a"/><rect x="88.0" y="80" width="3" height="10" fill="#0a0a0a"/><path d="M 90.0 126 Q 0.0 126 0.0 4" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="1.0" y="54" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">959×1972</text></svg></div><div class='e-infoblock'><div class='e-masse'>959 × 1972 mm</div><div class='e-info'>DIN R<br>C-Griff<br>Klarglas<br>V7888 WF Band (stumpf)</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0AQAAAAAVtjufAAABr0lEQVR4nNWYMY7lOAxEHxudP93g3/9Ye4PSCWoDdbLAYIIFgxknlhUUiHL5kfKUX13365fb8Oftz8y5cy/3zhwuM3PW9Kmtxdo0RG3Nlv43jEwP4YjennHPn+93u/fcemH6/3R+r+8nOIFPxlX95z9Aq4Xu+j8d8D9bF/xnr/62JajYtLbtWv1UsCitmPe8qZ9WE554QPb8p4mE5n1nqXHRny/8EDKHO6GfgXt3+aAQEiGJDZv+JyRNivl5EYv5p00ghMe3Jslq/SVFTdJoZVWfhJqi5Jm1mv9IsDSJGiGr/otgbMwP5vbq/2YMcoVT8ACcRb5BKb6ywSar/rdNf2xKG1z2v/hCgw1tNvn8zTTAJ8DlI9PpZn8kFWoskDZd5nNiVRpq4i5/SMTapqYlrvLBWsLjsqJZ7b9ENAahgWX+a+IbPqlSXM3/mxfSmEIKu/wU2rewfd1xV19rSh//wVX/29a8BonW6mr+wWDoC5Cr/P/Clk+Bw204BPbmn3d+udNjDvfgHc76+cVLBk45AT6b8xuvq6c2kOBu/lujpslbLs8/IAGsGHbrn7/8/8C/ZzmsrsmFQdIAAAAASUVORK5CYII=' width='32' height='32'><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 1 (1/2)</span></div></div></div></div><div style="page-break-after:avoid"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07234_1</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FT stumpf</span><span class='e-name'>FORMAT STUMPF | LOFT Drehtür für stumpfe Holz-Zargen</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FT stumpf (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">959×1972</text><line x1="0" y1="55.5" x2="90" y2="55.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="79.0" x2="90" y2="79.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="102.5" x2="90" y2="102.5" stroke="#0a0a0a" stroke-width="1.2"/><rect x="88.0" y="39" width="3" height="10" fill="#0a0a0a"/><rect x="88.0" y="80" width="3" height="10" fill="#0a0a0a"/><path d="M 90.0 126 Q 0.0 126 0.0 4" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="1.0" y="54" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">959×1972</text></svg></div><div class='e-infoblock'><div class='e-masse'>959 × 1972 mm</div><div class='e-info'>DIN R<br>C-Griff<br>Klarglas<br>V7888 WF Band (stumpf)</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0AQAAAAAVtjufAAABr0lEQVR4nNWYMY7lOAxEHxudP93g3/9Ye4PSCWoDdbLAYIIFgxknlhUUiHL5kfKUX13365fb8Oftz8y5cy/3zhwuM3PW9Kmtxdo0RG3Nlv43jEwP4YjennHPn+93u/fcemH6/3R+r+8nOIFPxlX95z9Aq4Xu+j8d8D9bF/xnr/62JajYtLbtWv1UsCitmPe8qZ9WE554QPb8p4mE5n1nqXHRny/8EDKHO6GfgXt3+aAQEiGJDZv+JyRNivl5EYv5p00ghMe3Jslq/SVFTdJoZVWfhJqi5Jm1mv9IsDSJGiGr/otgbMwP5vbq/2YMcoVT8ACcRb5BKb6ywSar/rdNf2xKG1z2v/hCgw1tNvn8zTTAJ8DlI9PpZn8kFWoskDZd5nNiVRpq4i5/SMTapqYlrvLBWsLjsqJZ7b9ENAahgWX+a+IbPqlSXM3/mxfSmEIKu/wU2rewfd1xV19rSh//wVX/29a8BonW6mr+wWDoC5Cr/P/Clk+Bw204BPbmn3d+udNjDvfgHc76+cVLBk45AT6b8xuvq6c2kOBu/lujpslbLs8/IAGsGHbrn7/8/8C/ZzmsrsmFQdIAAAAASUVORK5CYII=' width='32' height='32'><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 1 (2/2)</span></div></div></div></div>
+<div style="page-break-after:always"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07234_1</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FT stumpf</span><span class='e-name'>FORMAT STUMPF | LOFT Drehtür für stumpfe Holz-Zargen</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FT stumpf (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">959×1972</text><line x1="0" y1="55.5" x2="90" y2="55.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="79.0" x2="90" y2="79.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="102.5" x2="90" y2="102.5" stroke="#0a0a0a" stroke-width="1.2"/><rect x="88.0" y="39" width="3" height="10" fill="#0a0a0a"/><rect x="88.0" y="80" width="3" height="10" fill="#0a0a0a"/><path d="M 90.0 126 Q 0.0 126 0.0 4" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="1.0" y="54" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">959×1972</text></svg></div><div class='e-infoblock'><div class='e-masse'>959 × 1972 mm</div><div class='e-info'>DIN R<br>C-Griff<br>Klarglas<br>V7888 WF Band (stumpf)</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAD4ElEQVR4nO2dT4rjOhCHv3o2ZGlDHyBHcW42zM2so7wDNMjLBpt6C1VJcmZ4i5kJSYaqRUNif0SGH6X6J7cov2bpn18EIcgggwzyjtzE7MYhIvMhpBlI81EvAGkGv3N83mqDfDkS1TyoqqqyqCowqH+3o6o7MO2w5KHcUq6u7/WcQT6aNNeyiahmKKJhG5HbdtEin3Tdyy1ye/Jqg3xxMs2HyG0TAQYlzYeQpIrrIb8Z5F9EDirfdEe/X1VFrl+i67TDoqrmqv78bwb57mTRhSf4h5AEhAmU7aKyZFSSgLJ9AJMC27NWG+SrkpZ+AYPFPsu/I3IDYBtLOF0+JhERmZ+52iBfjRzNtQCwHaJpRvzzITDtaLruKFvzV7/3m0H+XeQI28deVLOsisCwCxyioAjbDEs+RgXw+5612iBfkbT60DpZ3YdFd3Qt1+wCS6b7zi6813MG+TiyVBF1ZVCrCk2qunKuO067a80vhIaCrGZSKc7o7IL8anFQ7bs1/FCQvVlfIw9ly3JnVH0T4OKy/oe5qvd6ziAfR9a9zKVSPk7eObN4yLyUEdEvC7I3i26qQNb659xzdXGZwkJDQVYzqWQ679OHRx5il+h68ftCQ0FWc/lYnFNye83YsEeJjFqMNFmuFhoKslrZrVoFyJJ51RZJm1tqIXbkZUH25rk9WF5GKwPtsOh+vi/qQ0Hem+1bno15eDRo2eRU+xjJNBR5WZC9+eCi7WDUWVibe3U/ZFGQjxOFhoKsps1WF1IrTHtar2rRUo54KMh7824GLpCp38vM59DqSFVw7/WcQT6OxMOe/dTSqBqi1qnLfbmq6b2eM8jHkX150fplViTyo0LQb2itCfJezxnk48ifuiAvL9ZtrPbLlhz9siDvratTlyKRapeSnSbUajgdvY4ge2uzH64S7uc8zC3hU44RDwV5suZfqCrx6rQ3N2qRSGN+KMgf7TRF7ZXF1UOh3g+1cDpi6iB783oiXSW6tcra8fs+1Y+9LMjOuvPPfvpnRJiyCtuMLKsC20Vh2u1QbJrzk1Yb5CuSdH0NS8l8JE3v5oeK1aT/vZ4zyMeRfb+slYH6U0LQdetr9Sg0FGS17p0wNRvzyiK02nU3jRa5fZD3pJ9HZLtok5TcANLVnJHcqIddt3iXXpCd9fFQhlOT1ctFQJ1yhNjLgvx/csn2tg97u6eMPszo0bV+n19mtUG+AHl+t9mwk2RQSfPnqGwfO3CMAqBp/kTgorLos1Yb5OuS3sP4EvmWqZH0l5Bm39Uob/c8JPxQkGfr87LcXhGDd/AznrBN3kOLOnWQvUn8r4UggwzyyeR/USoPnJtBiZkAAAAASUVORK5CYII='><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 1 (1/2)</span></div></div></div></div><div style="page-break-after:avoid"><div class='etikett-seite'><div class='e-hdr'><div class='e-snr'>S07234_1</div><div class='e-sped'>WKS Süd</div></div><div class='e-typ'><span class='e-badge'>FT stumpf</span><span class='e-name'>FORMAT STUMPF | LOFT Drehtür für stumpfe Holz-Zargen</span></div><div class='e-svg'><svg width="90" height="130" viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="4" width="90" height="122" fill="url(#gKl2)" stroke="#0a0a0a" stroke-width="1.8"/><text x="45.0" y="17" font-size="9.5" font-weight="800" text-anchor="middle">FT stumpf (2x)</text><text x="45.0" y="28" font-size="7" text-anchor="middle" fill="#555">959×1972</text><line x1="0" y1="55.5" x2="90" y2="55.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="79.0" x2="90" y2="79.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="0" y1="102.5" x2="90" y2="102.5" stroke="#0a0a0a" stroke-width="1.2"/><rect x="88.0" y="39" width="3" height="10" fill="#0a0a0a"/><rect x="88.0" y="80" width="3" height="10" fill="#0a0a0a"/><path d="M 90.0 126 Q 0.0 126 0.0 4" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="1.0" y="54" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="45.0" y="148" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><text x="45" y="123" font-size="7" text-anchor="middle" font-family="sans-serif" fill="#666">959×1972</text></svg></div><div class='e-infoblock'><div class='e-masse'>959 × 1972 mm</div><div class='e-info'>DIN R<br>C-Griff<br>Klarglas<br>V7888 WF Band (stumpf)</div></div><div class='e-footer'><div class='e-qr'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAD4ElEQVR4nO2dT4rjOhCHv3o2ZGlDHyBHcW42zM2so7wDNMjLBpt6C1VJcmZ4i5kJSYaqRUNif0SGH6X6J7cov2bpn18EIcgggwzyjtzE7MYhIvMhpBlI81EvAGkGv3N83mqDfDkS1TyoqqqyqCowqH+3o6o7MO2w5KHcUq6u7/WcQT6aNNeyiahmKKJhG5HbdtEin3Tdyy1ye/Jqg3xxMs2HyG0TAQYlzYeQpIrrIb8Z5F9EDirfdEe/X1VFrl+i67TDoqrmqv78bwb57mTRhSf4h5AEhAmU7aKyZFSSgLJ9AJMC27NWG+SrkpZ+AYPFPsu/I3IDYBtLOF0+JhERmZ+52iBfjRzNtQCwHaJpRvzzITDtaLruKFvzV7/3m0H+XeQI28deVLOsisCwCxyioAjbDEs+RgXw+5612iBfkbT60DpZ3YdFd3Qt1+wCS6b7zi6813MG+TiyVBF1ZVCrCk2qunKuO067a80vhIaCrGZSKc7o7IL8anFQ7bs1/FCQvVlfIw9ly3JnVH0T4OKy/oe5qvd6ziAfR9a9zKVSPk7eObN4yLyUEdEvC7I3i26qQNb659xzdXGZwkJDQVYzqWQ679OHRx5il+h68ftCQ0FWc/lYnFNye83YsEeJjFqMNFmuFhoKslrZrVoFyJJ51RZJm1tqIXbkZUH25rk9WF5GKwPtsOh+vi/qQ0Hem+1bno15eDRo2eRU+xjJNBR5WZC9+eCi7WDUWVibe3U/ZFGQjxOFhoKsps1WF1IrTHtar2rRUo54KMh7824GLpCp38vM59DqSFVw7/WcQT6OxMOe/dTSqBqi1qnLfbmq6b2eM8jHkX150fplViTyo0LQb2itCfJezxnk48ifuiAvL9ZtrPbLlhz9siDvratTlyKRapeSnSbUajgdvY4ge2uzH64S7uc8zC3hU44RDwV5suZfqCrx6rQ3N2qRSGN+KMgf7TRF7ZXF1UOh3g+1cDpi6iB783oiXSW6tcra8fs+1Y+9LMjOuvPPfvpnRJiyCtuMLKsC20Vh2u1QbJrzk1Yb5CuSdH0NS8l8JE3v5oeK1aT/vZ4zyMeRfb+slYH6U0LQdetr9Sg0FGS17p0wNRvzyiK02nU3jRa5fZD3pJ9HZLtok5TcANLVnJHcqIddt3iXXpCd9fFQhlOT1ctFQJ1yhNjLgvx/csn2tg97u6eMPszo0bV+n19mtUG+AHl+t9mwk2RQSfPnqGwfO3CMAqBp/kTgorLos1Yb5OuS3sP4EvmWqZH0l5Bm39Uob/c8JPxQkGfr87LcXhGDd/AznrBN3kOLOnWQvUn8r4UggwzyyeR/USoPnJtBiZkAAAAASUVORK5CYII='><div class='e-qr-lbl'>Montage-<br>anleitung</div></div><div class='e-pos'>10.06.26<br><span class='e-pos-nr'>1 / 1 (2/2)</span></div></div></div></div>
 </body>
 </html>
