@@ -698,17 +698,6 @@
       }
     ]
   },
-  "S07225-1": {
-    "typen": [
-      "format"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
-      }
-    ]
-  },
   "S07235-1": {
     "typen": [
       "drehtuer",
@@ -1191,6 +1180,17 @@
       {
         "titel": "Festelement",
         "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S07348-1": {
+    "typen": [
+      "format"
+    ],
+    "anleitungen": [
+      {
+        "titel": "FORMAT (Norm-Lofttüren)",
+        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
       }
     ]
   }
