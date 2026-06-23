@@ -451,22 +451,6 @@
       }
     ]
   },
-  "S07077-1": {
-    "typen": [
-      "drehtuer",
-      "festelement"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Blockzarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
-      },
-      {
-        "titel": "Festelement",
-        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
-      }
-    ]
-  },
   "S06727-1": {
     "typen": [
       "drehtuer",
@@ -1289,6 +1273,94 @@
       {
         "titel": "Blockzarge",
         "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      }
+    ]
+  },
+  "S07430-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "FORMAT (Norm-Lofttüren)",
+        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
+      }
+    ]
+  },
+  "S06553-1": {
+    "typen": [
+      "drehtuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      },
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S07057-1": {
+    "typen": [
+      "schiebetuer"
+    ],
+    "anleitungen": []
+  },
+  "S07429-1": {
+    "typen": [
+      "schiebetuer"
+    ],
+    "anleitungen": []
+  },
+  "S07313-1": {
+    "typen": [
+      "drehtuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      },
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S07313-2": {
+    "typen": [
+      "pivot"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Pivot SLIM PLUS",
+        "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
+      }
+    ]
+  },
+  "S07438-1": {
+    "typen": [
+      "format"
+    ],
+    "anleitungen": [
+      {
+        "titel": "FORMAT (Norm-Lofttüren)",
+        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
+      }
+    ]
+  },
+  "S07440-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "FORMAT (Norm-Lofttüren)",
+        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
       }
     ]
   }
