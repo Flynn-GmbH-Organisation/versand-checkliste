@@ -175,66 +175,11 @@
       }
     ]
   },
-  "S07033-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Blockzarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
-      }
-    ]
-  },
-  "S07497-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Blockzarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
-      }
-    ]
-  },
-  "S07666-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Blockzarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
-      }
-    ]
-  },
-  "S07664-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
-      }
-    ]
-  },
   "S07662-1": {
     "typen": [
       "schiebetuer"
     ],
     "anleitungen": []
-  },
-  "S07465-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Blockzarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
-      }
-    ]
   },
   "S07577-1": {
     "typen": [
@@ -280,17 +225,6 @@
       }
     ]
   },
-  "S07708-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Blockzarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
-      }
-    ]
-  },
   "S07609-1": {
     "typen": [
       "schiebetuer",
@@ -327,17 +261,6 @@
       {
         "titel": "Pivot SLIM PLUS",
         "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
-      }
-    ]
-  },
-  "S07761-1": {
-    "typen": [
-      "format"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
       }
     ]
   },
