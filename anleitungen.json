@@ -181,12 +181,6 @@
     ],
     "anleitungen": []
   },
-  "S07577-1": {
-    "typen": [
-      "schiebetuer"
-    ],
-    "anleitungen": []
-  },
   "S07595-1": {
     "typen": [
       "drehtuer"
@@ -219,18 +213,6 @@
         "titel": "SLIM-Zarge",
         "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
       },
-      {
-        "titel": "Festelement",
-        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
-      }
-    ]
-  },
-  "S07609-1": {
-    "typen": [
-      "schiebetuer",
-      "festelement"
-    ],
-    "anleitungen": [
       {
         "titel": "Festelement",
         "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
@@ -809,17 +791,6 @@
     ],
     "anleitungen": []
   },
-  "S07844-1": {
-    "typen": [
-      "format"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
-      }
-    ]
-  },
   "S07846-1": {
     "typen": [
       "drehtuer",
@@ -927,17 +898,6 @@
       {
         "titel": "Pivot SLIM PLUS",
         "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
-      }
-    ]
-  },
-  "S07880-1": {
-    "typen": [
-      "format"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
       }
     ]
   },
@@ -1487,6 +1447,28 @@
       {
         "titel": "FORMAT (Norm-Lofttüren)",
         "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
+      }
+    ]
+  },
+  "S07911-1": {
+    "typen": [
+      "format"
+    ],
+    "anleitungen": [
+      {
+        "titel": "FORMAT (Norm-Lofttüren)",
+        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
+      }
+    ]
+  },
+  "S07793-1": {
+    "typen": [
+      "pivot"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Pivot SLIM PLUS",
+        "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
       }
     ]
   }
