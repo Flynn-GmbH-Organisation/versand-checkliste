@@ -16,22 +16,6 @@
     ],
     "anleitungen": []
   },
-  "S06317-1": {
-    "typen": [
-      "pivot",
-      "festelement"
-    ],
-    "anleitungen": [
-      {
-        "titel": "Pivot SLIM PLUS",
-        "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
-      },
-      {
-        "titel": "Festelement",
-        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
-      }
-    ]
-  },
   "S07811-1": {
     "typen": [
       "drehtuer"
@@ -185,17 +169,6 @@
       }
     ]
   },
-  "S08010-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
-      }
-    ]
-  },
   "S06914-1": {
     "typen": [
       "pivot",
@@ -298,17 +271,6 @@
         "titel": "Blockzarge",
         "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
       },
-      {
-        "titel": "Festelement",
-        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
-      }
-    ]
-  },
-  "S07945-1": {
-    "typen": [
-      "festelement"
-    ],
-    "anleitungen": [
       {
         "titel": "Festelement",
         "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
@@ -961,6 +923,133 @@
       {
         "titel": "Festelement",
         "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08124-1": {
+    "typen": [
+      "drehtuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      },
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08032-1": {
+    "typen": [
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08266-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      }
+    ]
+  },
+  "S08264-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      }
+    ]
+  },
+  "S08264-2": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      }
+    ]
+  },
+  "S08264-3": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      }
+    ]
+  },
+  "S07960-1": {
+    "typen": [
+      "schiebetuer"
+    ],
+    "anleitungen": []
+  },
+  "S07960-2": {
+    "typen": [
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08265-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "SLIM-Zarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
+      }
+    ]
+  },
+  "S08265-2": {
+    "typen": [
+      "pivot"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Pivot SLIM PLUS",
+        "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
+      }
+    ]
+  },
+  "S08265-3": {
+    "typen": [
+      "schiebetuer"
+    ],
+    "anleitungen": []
+  },
+  "S08107-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "SLIM-Zarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
       }
     ]
   }
