@@ -239,7 +239,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
   <div class="ld"><svg width="14" height="10" viewBox="0 0 18 14" fill="none"><path d="M9 1L17 13H1L9 1Z" fill="white"/></svg></div>
   <div class="ph-brand">
     <h1>Versand-Checkliste</h1>
-    <div class="sub" id="phsub">73 Aufträge · Stand 13.11.2026</div>
+    <div class="sub" id="phsub">70 Aufträge · Stand 17.11.2026</div>
   </div>
   <div class="spacer"></div>
   <button class="back" id="backBtn" onclick="closeCl()">‹ Übersicht</button>
@@ -248,10 +248,10 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
 
 <div id="overview">
   <div class="stat-row">
-    <div class="stat">       <div class="v">73</div><div class="l">Aufträge gesamt</div></div>
-    <div class="stat red">   <div class="v">2</div>  <div class="l">Kritisch (&gt;10 mm)</div></div>
-    <div class="stat amber"> <div class="v">23</div><div class="l">Prüfen</div></div>
-    <div class="stat green"> <div class="v">48</div><div class="l">Ohne Befund</div></div>
+    <div class="stat">       <div class="v">70</div><div class="l">Aufträge gesamt</div></div>
+    <div class="stat red">   <div class="v">1</div>  <div class="l">Kritisch (&gt;10 mm)</div></div>
+    <div class="stat amber"> <div class="v">20</div><div class="l">Prüfen</div></div>
+    <div class="stat green"> <div class="v">49</div><div class="l">Ohne Befund</div></div>
   </div>
   <div class="toolbar">
     <div class="search">
@@ -259,8 +259,8 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
       <input id="q" type="text" placeholder="Auftragsnummer suchen…" oninput="applyFilter()" autocomplete="off">
     </div>
     <div class="chips">
-      <button class="chip active" data-f="all"   onclick="setChip(this)">Alle <span class="cn">73</span></button>
-      <button class="chip"        data-f="red"   onclick="setChip(this)">Kritisch <span class="cn">2</span></button>
+      <button class="chip active" data-f="all"   onclick="setChip(this)">Alle <span class="cn">70</span></button>
+      <button class="chip"        data-f="red"   onclick="setChip(this)">Kritisch <span class="cn">1</span></button>
       <button class="chip"        data-f="warn"  onclick="setChip(this)">Warnung</button>
       <button class="chip"        data-f="nofg"  onclick="setChip(this)">Ohne Zeichnung</button>
       <button class="chip"        data-f="open"  onclick="setChip(this)">Offen</button>
@@ -283,15 +283,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S06110</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S06110">0/11</span></div>
-  </button>
-<button class="oc lvl-amber" data-nr="S06362" data-level="amber"
-      data-fg="1"
-      data-warn="0"
-      data-abw="1"
-      onclick="openCl('S06362')">
-    <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S06362</div><div class="oc-typ">Pivottür</div></div>
-    <div class="oc-right"><span class="bdg b-amber">Δ4mm</span><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S06362">0/14</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S06785" data-level="green"
       data-fg="1"
@@ -383,15 +374,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-body"><div class="oc-nr">S07964</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S07964">0/11</span></div>
   </button>
-<button class="oc lvl-red" data-nr="S07967" data-level="red"
-      data-fg="1"
-      data-warn="0"
-      data-abw="1"
-      onclick="openCl('S07967')">
-    <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S07967</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-red">Δ116mm</span><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S07967">0/12</span></div>
-  </button>
 <button class="oc lvl-green" data-nr="S08002" data-level="green"
       data-fg="1"
       data-warn="0"
@@ -482,14 +464,14 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-body"><div class="oc-nr">S08157</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-slate">2× FE</span><span class="oc-prog" id="p_S08157">0/24</span></div>
   </button>
-<button class="oc lvl-green" data-nr="S08158" data-level="green"
+<button class="oc lvl-green" data-nr="S08166" data-level="green"
       data-fg="1"
       data-warn="0"
       data-abw="0"
-      onclick="openCl('S08158')">
+      onclick="openCl('S08166')">
     <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S08158</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-slate">2× FE</span><span class="oc-prog" id="p_S08158">0/19</span></div>
+    <div class="oc-body"><div class="oc-nr">S08166</div><div class="oc-typ">Schiebetür</div></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08166">0/11</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S08174" data-level="green"
       data-fg="1"
@@ -535,15 +517,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S08195</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-amber">Glas prüfen</span><span class="oc-prog" id="p_S08195">0/22</span></div>
-  </button>
-<button class="oc lvl-amber" data-nr="S08206" data-level="amber"
-      data-fg="0"
-      data-warn="0"
-      data-abw="0"
-      onclick="openCl('S08206')">
-    <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S08206</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-amber">keine Zeichnung</span><span class="oc-prog" id="p_S08206">0/3</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S08235" data-level="green"
       data-fg="1"
@@ -635,15 +608,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-body"><div class="oc-nr">S08366</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08366">0/17</span></div>
   </button>
-<button class="oc lvl-amber" data-nr="S08378" data-level="amber"
-      data-fg="0"
-      data-warn="0"
-      data-abw="0"
-      onclick="openCl('S08378')">
-    <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S08378</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-amber">keine Zeichnung</span><span class="oc-prog" id="p_S08378">0/3</span></div>
-  </button>
 <button class="oc lvl-green" data-nr="S08379" data-level="green"
       data-fg="1"
       data-warn="0"
@@ -652,15 +616,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S08379</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08379">0/13</span></div>
-  </button>
-<button class="oc lvl-green" data-nr="S08381" data-level="green"
-      data-fg="1"
-      data-warn="0"
-      data-abw="0"
-      onclick="openCl('S08381')">
-    <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S08381</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-slate">2× FE</span><span class="oc-prog" id="p_S08381">0/17</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S08397" data-level="green"
       data-fg="1"
@@ -716,15 +671,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-body"><div class="oc-nr">S08412</div><div class="oc-typ">Drehtür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08412">0/11</span></div>
   </button>
-<button class="oc lvl-green" data-nr="S08413" data-level="green"
-      data-fg="1"
-      data-warn="0"
-      data-abw="0"
-      onclick="openCl('S08413')">
-    <div class="oc-dot-col"></div>
-    <div class="oc-body"><div class="oc-nr">S08413</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08413">0/11</span></div>
-  </button>
 <button class="oc lvl-green" data-nr="S08415" data-level="green"
       data-fg="1"
       data-warn="0"
@@ -777,7 +723,16 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
       onclick="openCl('S08450')">
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S08450</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-amber">Glas prüfen</span><span class="oc-prog" id="p_S08450">0/15</span></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="bdg b-amber">Glas prüfen</span><span class="oc-prog" id="p_S08450">0/14</span></div>
+  </button>
+<button class="oc lvl-green" data-nr="S08456" data-level="green"
+      data-fg="1"
+      data-warn="0"
+      data-abw="0"
+      onclick="openCl('S08456')">
+    <div class="oc-dot-col"></div>
+    <div class="oc-body"><div class="oc-nr">S08456</div><div class="oc-typ">Drehtür</div></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08456">0/10</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S08460" data-level="green"
       data-fg="1"
@@ -841,6 +796,15 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S08476</div><div class="oc-typ">Pivottür</div></div>
     <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08476">0/10</span></div>
+  </button>
+<button class="oc lvl-green" data-nr="S08483" data-level="green"
+      data-fg="1"
+      data-warn="0"
+      data-abw="0"
+      onclick="openCl('S08483')">
+    <div class="oc-dot-col"></div>
+    <div class="oc-body"><div class="oc-nr">S08483</div><div class="oc-typ">Drehtür</div></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08483">0/12</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S08485" data-level="green"
       data-fg="1"
@@ -912,7 +876,7 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
       onclick="openCl('S08535')">
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S08535</div><div class="oc-typ">Drehtür</div></div>
-    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08535">0/12</span></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08535">0/13</span></div>
   </button>
 <button class="oc lvl-green" data-nr="S08545" data-level="green"
       data-fg="0"
@@ -922,6 +886,15 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="oc-dot-col"></div>
     <div class="oc-body"><div class="oc-nr">S08545</div><div class="oc-typ">FORMAT-Tür</div></div>
     <div class="oc-right"><span class="bdg b-blue">FORMAT</span><span class="oc-prog" id="p_S08545">0/7</span></div>
+  </button>
+<button class="oc lvl-green" data-nr="S08547" data-level="green"
+      data-fg="1"
+      data-warn="0"
+      data-abw="0"
+      onclick="openCl('S08547')">
+    <div class="oc-dot-col"></div>
+    <div class="oc-body"><div class="oc-nr">S08547</div><div class="oc-typ">Schiebetür</div></div>
+    <div class="oc-right"><span class="bdg b-green">Freigabe</span><span class="oc-prog" id="p_S08547">0/11</span></div>
   </button></div>
   <div class="empty" id="empty" style="display:none">Keine Aufträge für diesen Filter.</div>
 </div>
@@ -994,73 +967,6 @@ body{font-family:var(--font-body);color:var(--black);min-height:100vh;-webkit-fo
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (11)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="2"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="3"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06110" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL nach Wahl: Marrone 607 68/60525) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 834×2222 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit Magnetfallenschloss k montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06110" data-idx="10"><span class="lcbx"></span><span class="lcbt">Profil Profilstärke: oben 12mm | unten 12mm verbaut</span></label></div>
   </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
-<div class="checklist" id="cl_S06362" data-level="amber">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S06362</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Pivottür</div>
-      <div class="cl-sub">Freigabe S06362_1_A_(Eingang).pdf</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-
-  <div class="l3-top">
-    <div class="l3-right" style="width:100%">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Pivottür<br>Phase: in Arbeit DS+BR</div>
-      </div>
-      
-      <table class="l3-mass"><tbody><tr><td>Konfigurator</td><td>1283 mm</td></tr><tr><td>Zeichnung</td><td>1279 mm</td></tr><tr><td>Differenz</td><td class="warn-m">Δ4mm !</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc warn"><span class="lsd"></span>Maß Δ4mm (Toleranz)</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
-  <div class="ab-block">
-    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S06362_1 — Eingang
-
-1-flügelige Pivot-/Pendeltür 
-für lichtes Öffnungsmaß von: 1291 x 2249 mm (BxH)
-
-ACHTUNG: Bodenaufbau +6 mm für Designboden</div>
-    <div style="padding:4px 12px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S06362" data-pos="1" data-pos-ges="3" data-sped="FLYNN" data-montage="Montage durch Flynn" data-url="anleitung.html#S06362-1">🖨 Etikett drucken</button></div>
-    <div class="l3-draw" style="padding:8px 12px;"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">PIV</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1279×2225</text><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
-    <div class="l3-cb-grid" style="padding:4px 12px 8px;"><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="2"><span class="lcbx"></span><span class="lcbt">Türbreite 1283mm geprüft (Δ4mm Toleranz)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1291 x 2249 mm (BxH)
-
-ACH)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Pivottür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Pivottür (RAL9005 Schwarz matt Feinstruktur (107)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="7"><span class="lcbx"></span><span class="lcbt">Pivottür-Maße 1279×2225 mm geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06362" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehpunkt oben korrekt montiert</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06362" data-idx="9"><span class="lcbx"></span><span class="lcbt">Drehpunkt unten korrekt montiert</span></label></div>
-  </div>
-  <div class="ab-block">
-    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S06362_2 — Büro
-
-1-flügelige Pivot-/Pendeltür 
-für lichtes Öffnungsmaß von: 1294 x 2248 mm (BxH)
-
-ACHTUNG: Bodenaufbau +6 mm für Designboden noch abziehen!</div>
-    <div style="padding:4px 12px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S06362" data-pos="2" data-pos-ges="3" data-sped="FLYNN" data-montage="Montage durch Flynn" data-url="anleitung.html#S06362-2">🖨 Etikett drucken</button></div>
-    <div class="l3-draw" style="padding:8px 12px;"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">PIV</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1282×2224</text><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
-    <div class="l3-cb-grid" style="padding:4px 12px 8px;"><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="10"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="11"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="12"><span class="lcbx"></span><span class="lcbt">Türbreite 1283mm geprüft (Δ4mm Toleranz)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="13"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="14"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1294 x 2248 mm (BxH)
-
-ACH)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="15"><span class="lcbx"></span><span class="lcbt">Glas Pivottür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="16"><span class="lcbx"></span><span class="lcbt">Oberfläche Pivottür (RAL9005 Schwarz matt Feinstruktur (107)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="17"><span class="lcbx"></span><span class="lcbt">Pivottür-Maße 1282×2224 mm geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06362" data-idx="18"><span class="lcbx"></span><span class="lcbt">Drehpunkt oben korrekt montiert</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06362" data-idx="19"><span class="lcbx"></span><span class="lcbt">Drehpunkt unten korrekt montiert</span></label></div>
-  </div>
-  <div class="ab-block">
-    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S06362_3 — Wohnbereich
-
-1-flügelige Pivot-/Pendeltür 
-für lichtes Öffnungsmaß von: 1340 x 2244 mm (BxH)
-
-ACHTUNG: Bodenaufbau +6 mm für Designboden noch abziehen!</div>
-    <div style="padding:4px 12px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S06362" data-pos="3" data-pos-ges="3" data-sped="FLYNN" data-montage="Montage durch Flynn" data-url="anleitung.html#S06362-3">🖨 Etikett drucken</button></div>
-    <div class="l3-draw" style="padding:8px 12px;"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">PIV</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1328×2220</text><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
-    <div class="l3-cb-grid" style="padding:4px 12px 8px;"><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="20"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="21"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="22"><span class="lcbx"></span><span class="lcbt">Türbreite 1283mm geprüft (Δ4mm Toleranz)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="23"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="24"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1340 x 2244 mm (BxH)
-
-ACH)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="25"><span class="lcbx"></span><span class="lcbt">Glas Pivottür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="26"><span class="lcbx"></span><span class="lcbt">Oberfläche Pivottür (RAL9005 Schwarz matt Feinstruktur (107)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S06362" data-idx="27"><span class="lcbx"></span><span class="lcbt">Pivottür-Maße 1328×2220 mm geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06362" data-idx="28"><span class="lcbx"></span><span class="lcbt">Drehpunkt oben korrekt montiert</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S06362" data-idx="29"><span class="lcbx"></span><span class="lcbt">Drehpunkt unten korrekt montiert</span></label></div>
-  </div>
-
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
     <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
@@ -1212,7 +1118,7 @@ Oberkante Laufschiene bis Oberkante fertig Fußboden OKFB = 2665 mm Höhe
     <div class="l3-right" style="width:100%">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Schiebetür<br>Phase: beim Pulvern DS+BR</div>
+        <div class="l3-aufbau-b">Schiebetür<br>Phase: UNIKAT fertigen DS+BR</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -1264,7 +1170,7 @@ für Zargenfalzmaß von: 958 x 2583 mm (BxH)</div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="ok-m">814 mm ✓</td></tr></tbody></table>
@@ -1412,7 +1318,7 @@ für Zargenfalzmaß von: 958 x 2583 mm (BxH)</div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Schiebetür · 5 Festelemente<br>Phase: Kommissionierung DS+BR</div>
+        <div class="l3-aufbau-b">Schiebetür · 5 Festelemente<br>Phase: UNIKAT fertigen DS+BR</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -1459,43 +1365,6 @@ für Zargenfalzmaß von: 958 x 2583 mm (BxH)</div>
   <div class="l3-checks">
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (11)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S07964" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: ca. 1076 x 2281 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL nach Wahl: 3012) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1039×2250 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN R kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 604 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07964" data-idx="10"><span class="lcbx"></span><span class="lcbt">Profil Profilstärke: oben 12mm | unten 12mm verbaut</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
-<div class="checklist" id="cl_S07967" data-level="red">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S07967</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür</div>
-      <div class="cl-sub">Freigabe S07967_A.pdf</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-
-  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S07967" data-pos="1" data-pos-ges="1" data-sped="WKS SÜD" data-montage="" data-url="anleitung.html#S07967-1">🖨 Etikett drucken</button></div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
-      <div class="l3-draw"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_SZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1079×2523</text><line x1="55.0" y1="63" x2="55.0" y2="180" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="92.2" x2="95" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="121.5" x2="95" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="150.8" x2="95" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><rect x="92.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="92.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 95.0 180 Q 15.0 180 15.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="16.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
-      <div class="ref-line">⊞ Planungsunterlage: planungsunterlagenApfel Bau _ BV_ Kirschner_2026-09-04.pdf</div>
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: UNIKAT fertigen DS+BR</div>
-      </div>
-      <div class="l3-warn">⚠ Maßabweichung Δ116mm — VOR Versand prüfen!</div>
-      <table class="l3-mass"><tbody><tr><td>Konfigurator</td><td>963 mm</td></tr><tr><td>Zeichnung</td><td>1079 mm</td></tr><tr><td>Differenz</td><td class="bad-m">Δ116mm ✗</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc bad"><span class="lsd"></span>Maß Δ116mm prüfen</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (12)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S07967" data-idx="2"><span class="lcbx"></span><span class="lcbt">MASS PRÜFEN Δ116mm (Konfig 963 / Zeichn. 1079)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="3"><span class="lcbx"></span><span class="lcbt">Griff: C-Griff Set geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S07967" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="5"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1118 x 2552 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="6"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="7"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1079×2523 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="9"><span class="lcbx"></span><span class="lcbt">DIN R kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="10"><span class="lcbx"></span><span class="lcbt">mit C-Griff montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S07967" data-idx="11"><span class="lcbx"></span><span class="lcbt">Klebesprossen für Fenster / Felder angebracht</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -1636,7 +1505,7 @@ ACH)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08028" 
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Pivottür<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Pivottür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -1789,7 +1658,7 @@ für lichtes Öffnungsmaß von:  1560 x 2107 mm (BxH)</div>
     <div class="l3-right" style="width:100%">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · 4 Felder / 1 Sp.<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Drehtür · 4 Felder / 1 Sp.<br>Phase: Produktionszeichnung erstellen ED+HS</div>
       </div>
       <div class="l3-warn">⚠ Satiniertes Glas prüfen</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -1920,27 +1789,27 @@ Gri montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S08158" data-level="green">
+<div class="checklist" id="cl_S08166" data-level="green">
   <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08158</span></div>
+    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08166</span></div>
     <div class="cl-title">
-      <div class="cl-main">Drehtür · Blockzarge · 2 Festelemente</div>
-      <div class="cl-sub">DIN R · Freigabe S08158_A.pdf</div>
+      <div class="cl-main">Schiebetür</div>
+      <div class="cl-sub">Freigabe S08166_A 34 Eloxal Metallic.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
 
-  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08158" data-pos="1" data-pos-ges="1" data-sped="WKS Stuttgart" data-montage="" data-url="anleitung.html#S08158-1">🖨 Etikett drucken</button></div>
+  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08166" data-pos="1" data-pos-ges="1" data-sped="WKS ZONE 2" data-montage="" data-url="anleitung.html#S08166-1">🖨 Etikett drucken</button></div>
   <div class="l3-top">
     <div class="l3-left">
       <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
-      <div class="l3-draw"><svg viewBox="0 0 195 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_BZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1090×2318</text><line x1="55.0" y1="63" x2="55.0" y2="180" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="102.0" x2="95" y2="102.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="141.0" x2="95" y2="141.0" stroke="#0a0a0a" stroke-width="1.2"/><rect x="92.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="92.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 95.0 180 Q 15.0 180 15.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="16.0" y="93" width="6" height="28" rx="2" fill="#0a0a0a"/><rect x="22.0" y="105" width="8" height="5" rx="1" fill="#0a0a0a"/><circle cx="19" cy="115" r="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><rect x="100" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.2"/><text x="140.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="140.0" y="59" font-size="7" text-anchor="middle" fill="#555">975×2356</text><text x="140.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
+      <div class="l3-draw"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><line x1="15" y1="40" x2="95" y2="40" stroke="#0a0a0a" stroke-width="3"/><rect x="32.5" y="37" width="5" height="6" fill="#0a0a0a"/><rect x="72.5" y="37" width="5" height="6" fill="#0a0a0a"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1257×2132</text><line x1="15" y1="92.2" x2="95" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="121.5" x2="95" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="150.8" x2="95" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
       
     </div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Prozessabbruch MU+EB</div>
+        <div class="l3-aufbau-b">Schiebetür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -1948,9 +1817,10 @@ Gri montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="
   </div>
   <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
   <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (19)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="2"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="3"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="4"><span class="lcbx"></span><span class="lcbt">Montage-Stege verpackt (2× Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="5"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x10 (Zarge ↔ Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="6"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x20 (Festelement ↔ Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="7"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (e geändert auf Kundenwunsch 
-N)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="8"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 3105 x 2360 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="9"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="10"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="11"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1090×2318 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="12"><span class="lcbx"></span><span class="lcbt">DIN R kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="13"><span class="lcbx"></span><span class="lcbt">mit Magnetfallenschloss l montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="14"><span class="lcbx"></span><span class="lcbt">Bänder 2x VX 7729/120) montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="15"><span class="lcbx"></span><span class="lcbt">Klebesprossen für Fenster / Felder angebracht</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="16"><span class="lcbx"></span><span class="lcbt">Glas Festelement auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="17"><span class="lcbx"></span><span class="lcbt">Oberfläche Festelement (RAL9005 Schwarz matt Feinstruktur (107)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" data-idx="18"><span class="lcbx"></span><span class="lcbt">Festelement-Maße 975×2356 mm geprüft</span></label></div>
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (11)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIDE-Griff (Klebegriff) geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08166" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1245 x 2150mm (BxH)
+
+Lich)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Schiebetür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Schiebetür (RAL nach Wahl: 68/60306 ca. C 34 Eloxal Metal) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="7"><span class="lcbx"></span><span class="lcbt">Schiebetür-Maße 1257×2132 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN L Schiebetür kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="9"><span class="lcbx"></span><span class="lcbt">Laufschiene geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08166" data-idx="10"><span class="lcbx"></span><span class="lcbt">Bodenführung verpackt</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -1963,7 +1833,7 @@ N)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" da
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08174</span></div>
     <div class="cl-title">
       <div class="cl-main">Drehtür · Blockzarge · 2 Festelemente</div>
-      <div class="cl-sub">Freigabe S08174_8_A Büro EG.01.03.pdf</div>
+      <div class="cl-sub">Freigabe S08174_8_B Büro EG.01.03.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
@@ -1972,7 +1842,7 @@ N)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08158" da
     <div class="l3-right" style="width:100%">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: Kommissionierung DS+BR</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -2203,43 +2073,6 @@ für lichtes Öffnungsmaß von 893 x 2973</div>
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S08206" data-level="amber">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08206</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür</div>
-      <div class="cl-sub">Keine Zeichnung</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-  <div style="background:#FF6B00;color:#fff;padding:8px 12px;font-size:12px;border-radius:4px;margin-bottom:8px;">⚠ Vorschau — erstellt auf Basis der Odoo-Auftragslogik. Keine Planungsunterlage (PDF) gefunden.</div>
-  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08206" data-pos="1" data-pos-ges="1" data-sped="WKS ZONE 3" data-montage="Montage durch Flynn" data-url="anleitung.html#S08206-1">🖨 Etikett drucken</button></div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
-      <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="72.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">DT</text><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
-      
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: beim Pulvern DS+BR</div>
-      </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
-      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (3)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08206" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08206" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08206" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
 <div class="checklist" id="cl_S08235" data-level="green">
   <div class="cl-head">
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08235</span></div>
@@ -2376,7 +2209,7 @@ für lichtes Öffnungsmaß von: 921 x 2498 mm (BxH)</div>
     <div class="l3-right" style="width:100%">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -2384,14 +2217,14 @@ für lichtes Öffnungsmaß von: 921 x 2498 mm (BxH)</div>
   </div>
   <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
   <div class="ab-block">
-    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S08280_1 — 1-flügelige Drehtür mit Slim-Zarge und Festelement
+    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S08280_1 — 1-flügelige Drehtür mit Slim-Zarge 
 für lichtes Öffnungsmaß von: 947 x 2107 mm (BxH)</div>
     <div style="padding:4px 12px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08280" data-pos="1" data-pos-ges="2" data-sped="WKS ZONE 3" data-montage="" data-url="anleitung.html#S08280-1">🖨 Etikett drucken</button></div>
     <div class="l3-draw" style="padding:8px 12px;"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_SZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">908×2078</text><rect x="92.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="92.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 95.0 180 Q 15.0 180 15.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="16.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
     <div class="l3-cb-grid" style="padding:4px 12px 8px;"><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08280" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 947 x 2107 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 908×2078 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN R kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08280" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 1100 montiert und geprüft</span></label></div>
   </div>
   <div class="ab-block">
-    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S08280_2 — 2-flügelige Pivottür mit Festelement
+    <div class="ab-label" style="color:#666;font-size:14px;font-weight:bold;padding:6px 12px 2px;border-top:1px solid #ddd;">S08280_2 — 2-flügelige Pivottür 
 für lichtes Öffnungsmaß von: 1773 x 3138 mm (BxH)</div>
     <div style="padding:4px 12px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08280" data-pos="2" data-pos-ges="2" data-sped="WKS ZONE 3" data-montage="" data-url="anleitung.html#S08280-2">🖨 Etikett drucken</button></div>
     <div class="l3-draw" style="padding:8px 12px;"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">PIV (2x)</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">877×3121</text><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
@@ -2577,7 +2410,7 @@ P063)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08363"
     <div class="l3-right" style="width:100%">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Fräsen RD+ED</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Kommissionierung DS+BR</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="ok-m">1150 mm ✓</td></tr></tbody></table>
@@ -2651,43 +2484,6 @@ Obe montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
 </div>
-<div class="checklist" id="cl_S08378" data-level="amber">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08378</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür</div>
-      <div class="cl-sub">Keine Zeichnung</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-  <div style="background:#FF6B00;color:#fff;padding:8px 12px;font-size:12px;border-radius:4px;margin-bottom:8px;">⚠ Vorschau — erstellt auf Basis der Odoo-Auftragslogik. Keine Planungsunterlage (PDF) gefunden.</div>
-  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08378" data-pos="1" data-pos-ges="1" data-sped="WKS ZONE 1" data-montage="Montage durch Flynn" data-url="anleitung.html#S08378-1">🖨 Etikett drucken</button></div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Skizze aus Auftragsdaten</div>
-      <div class="l3-draw"><svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" font-family="Barlow, sans-serif"><rect x="2" y="2" width="276" height="196" fill="none" stroke="#0a0a0a" stroke-width="1"/><rect x="24.0" y="30" width="96.0" height="142" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="72.0" y="48" font-size="9.5" text-anchor="middle" font-weight="800">DT</text><rect x="118.0" y="71" width="3" height="12" fill="#0a0a0a"/><rect x="118.0" y="118" width="3" height="12" fill="#0a0a0a"/><rect x="114.0" y="89" width="5" height="24" rx="2" fill="#0a0a0a"/><text x="24" y="193" font-size="9" fill="#666">Klarglas</text></svg></div>
-      
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: beim Pulvern DS+BR</div>
-      </div>
-      <div class="l3-warn">⚠ Keine Freigabezeichnung — Skizze aus Auftragsdaten</div>
-      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Keine Zeichnung</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (3)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08378" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08378" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08378" data-idx="2"><span class="lcbx"></span><span class="lcbt">Maße gegen Zeichnung geprüft</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
 <div class="checklist" id="cl_S08379" data-level="green">
   <div class="cl-head">
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08379</span></div>
@@ -2718,45 +2514,6 @@ Obe montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="
   <div class="l3-checks">
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (13)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="2"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="3"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08379" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="5"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 980 x 2125 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="6"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="7"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 913×2082 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="9"><span class="lcbx"></span><span class="lcbt">DIN R kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="10"><span class="lcbx"></span><span class="lcbt">mit Magnetfallenschloss k montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="11"><span class="lcbx"></span><span class="lcbt">Bänder 2x VX 7729/120) montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08379" data-idx="12"><span class="lcbx"></span><span class="lcbt">2 Sprosse(n) DT waagerecht korrekt</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
-<div class="checklist" id="cl_S08381" data-level="green">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08381</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür · Blockzarge · 2 Festelemente</div>
-      <div class="cl-sub">Freigabe S08381_A.pdf</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-
-  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08381" data-pos="1" data-pos-ges="1" data-sped="Keimeier und Finke" data-montage="" data-url="anleitung.html#S08381-1">🖨 Etikett drucken</button></div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
-      <div class="l3-draw"><svg viewBox="0 0 280 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_BZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">870×2456</text><line x1="68.3" y1="63" x2="68.3" y2="180" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="112.1" x2="95" y2="112.1" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="130.9" x2="95" y2="130.9" stroke="#0a0a0a" stroke-width="1.2"/><rect x="92.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="92.0" y="126" width="3" height="10" fill="#0a0a0a"/><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><rect x="100" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="140.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_BZ</text><text x="140.0" y="59" font-size="7" text-anchor="middle" fill="#555">870×2456</text><line x1="153.3" y1="63" x2="153.3" y2="180" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="112.1" x2="180" y2="112.1" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="130.9" x2="180" y2="130.9" stroke="#0a0a0a" stroke-width="1.2"/><rect x="177.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="177.0" y="126" width="3" height="10" fill="#0a0a0a"/><rect x="173.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="140.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><rect x="185" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.2"/><text x="225.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="225.0" y="59" font-size="7" text-anchor="middle" fill="#555">455×2456</text><text x="225.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
-      
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge · 2 Festelemente<br>Phase: UNIKAT fertigen DS+BR</div>
-      </div>
-      
-      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (17)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="4"><span class="lcbx"></span><span class="lcbt">Montage-Stege verpackt (2× Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="5"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x10 (Zarge ↔ Festelement)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="6"><span class="lcbx"></span><span class="lcbt">Befestigungsschrauben M5x20 (Festelement ↔ Festelement)</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08381" data-idx="7"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="8"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 2720 x 2498 mm (BxH)
-
-Gri)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="9"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="10"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="11"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 870×2456 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="12"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 1100 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="13"><span class="lcbx"></span><span class="lcbt">Bänder 2x VX 7729/120 montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="14"><span class="lcbx"></span><span class="lcbt">Glas Festelement auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="15"><span class="lcbx"></span><span class="lcbt">Oberfläche Festelement (RAL9005 Schwarz matt Feinstruktur (107)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08381" data-idx="16"><span class="lcbx"></span><span class="lcbt">Festelement-Maße 455×2456 mm geprüft</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -2975,7 +2732,7 @@ Ans)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08410" 
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Kommissionierung DS+BR</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: UNIKAT fertigen DS+BR</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -2985,43 +2742,6 @@ Ans)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08410" 
   <div class="l3-checks">
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (11)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08412" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1064 x 2284 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1025×2255 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 308 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08412" data-idx="10"><span class="lcbx"></span><span class="lcbt">3 Sprosse(n) DT waagerecht korrekt</span></label></div>
-  </div>
-  <div class="cl-foot">
-    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
-    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
-    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
-  </div>
-</div>
-<div class="checklist" id="cl_S08413" data-level="green">
-  <div class="cl-head">
-    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08413</span></div>
-    <div class="cl-title">
-      <div class="cl-main">Drehtür</div>
-      <div class="cl-sub">Freigabe S08413.pdf</div>
-    </div>
-    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
-  </div>
-
-  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08413" data-pos="1" data-pos-ges="1" data-sped="WKS SÜD" data-montage="" data-url="anleitung.html#S08413-1">🖨 Etikett drucken</button></div>
-  <div class="l3-top">
-    <div class="l3-left">
-      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
-      <div class="l3-draw"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_SZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1196×1966</text><line x1="55.0" y1="63" x2="55.0" y2="180" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="102.0" x2="95" y2="102.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="141.0" x2="95" y2="141.0" stroke="#0a0a0a" stroke-width="1.2"/><rect x="92.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="92.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 95.0 180 Q 15.0 180 15.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="16.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
-      
-    </div>
-    <div class="l3-right">
-      <div class="l3-aufbau">
-        <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Prozessabbruch MU+EB</div>
-      </div>
-      
-      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
-    </div>
-  </div>
-  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
-  <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (11)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08413" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1235 x 1995 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1196×1966 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN R kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 160 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08413" data-idx="10"><span class="lcbx"></span><span class="lcbt">Klebesprossen für Fenster / Felder angebracht</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -3049,7 +2769,7 @@ Ans)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08410" 
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Kommissionierung DS+BR</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: in Arbeit DS+BR</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3226,7 +2946,7 @@ für lichtes Öffnungsmaß von: 5208 x 2428 mm (BxH)</div>
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08450</span></div>
     <div class="cl-title">
       <div class="cl-main">Drehtür</div>
-      <div class="cl-sub">Freigabe FG-Zeichnung_2026-11-05 (1).pdf</div>
+      <div class="cl-sub">Freigabe S08450.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
@@ -3235,13 +2955,13 @@ für lichtes Öffnungsmaß von: 5208 x 2428 mm (BxH)</div>
   <div class="l3-top">
     <div class="l3-left">
       <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
-      <div class="l3-draw"><svg viewBox="0 0 195 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_SZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1100×2471</text><rect x="15.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="15.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 15.0 180 Q 95.0 180 95.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text><rect x="100" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.2"/><text x="140.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="140.0" y="59" font-size="7" text-anchor="middle" fill="#555">1165×2496</text><line x1="100" y1="92.2" x2="180" y2="92.2" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="121.5" x2="180" y2="121.5" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="150.8" x2="180" y2="150.8" stroke="#0a0a0a" stroke-width="1.2"/><text x="140.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text></svg></div>
+      <div class="l3-draw"><svg viewBox="0 0 195 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_SZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1100×2471</text><rect x="15.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="15.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 15.0 180 Q 95.0 180 95.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="88.0" y="93" width="6" height="28" rx="2" fill="#0a0a0a"/><rect x="80.0" y="105" width="8" height="5" rx="1" fill="#0a0a0a"/><circle cx="91" cy="115" r="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text><rect x="100" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.2"/><text x="140.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">FE (2x)</text><text x="140.0" y="59" font-size="7" text-anchor="middle" fill="#555">1165×2496</text><text x="140.0" y="202" font-size="7" text-anchor="middle" fill="#666">Satiniert</text></svg></div>
       <div class="ref-line">⊞ Planungsunterlage: planungsunterlagen.pdf</div>
     </div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       <div class="l3-warn">⚠ Satiniertes Glas prüfen</div>
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3249,10 +2969,45 @@ für lichtes Öffnungsmaß von: 5208 x 2428 mm (BxH)</div>
   </div>
   <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc warn"><span class="lsd"></span>Glas/Sonder prüfen</div></div>
   <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (15)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08450" data-idx="3"><span class="lcbx"></span><span class="lcbt">Satiniertes Glas prüfen</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08450" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="5"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von:  3470 x 2500 mm (BxH)
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (14)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="2"><span class="lcbx"></span><span class="lcbt">Magnetfallenschloss eingebaut</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08450" data-idx="3"><span class="lcbx"></span><span class="lcbt">Satiniertes Glas prüfen</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08450" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="5"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von:  3470 x 2500 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="6"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="7"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9016 weiß matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1100×2471 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="9"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="10"><span class="lcbx"></span><span class="lcbt">mit Magnetfallenschloss l montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="11"><span class="lcbx"></span><span class="lcbt">Glas Festelement auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="12"><span class="lcbx"></span><span class="lcbt">Oberfläche Festelement (RAL9016 weiß matt Feinstruktur (057)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="13"><span class="lcbx"></span><span class="lcbt">Festelement-Maße 1165×2496 mm geprüft</span></label></div>
+  </div>
+  <div class="cl-foot">
+    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
+    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
+    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
+  </div>
+</div>
+<div class="checklist" id="cl_S08456" data-level="green">
+  <div class="cl-head">
+    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08456</span></div>
+    <div class="cl-title">
+      <div class="cl-main">Drehtür</div>
+      <div class="cl-sub">Freigabe planungsunterlagenFG-ZeichnungRingo_2026-11-16.pdf</div>
+    </div>
+    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
+  </div>
 
-AC)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="6"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="7"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9016 weiß matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 1100×2471 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="9"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="10"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 160 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="11"><span class="lcbx"></span><span class="lcbt">Glas Festelement auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="12"><span class="lcbx"></span><span class="lcbt">Oberfläche Festelement (RAL9016 weiß matt Feinstruktur (057)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="13"><span class="lcbx"></span><span class="lcbt">Festelement-Maße 1165×2496 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08450" data-idx="14"><span class="lcbx"></span><span class="lcbt">3 Sprosse(n) FE waagerecht korrekt</span></label></div>
+  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08456" data-pos="1" data-pos-ges="1" data-sped="Schweiz - Keimeier und Finke" data-montage="" data-url="anleitung.html#S08456-1">🖨 Etikett drucken</button></div>
+  <div class="l3-top">
+    <div class="l3-left">
+      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
+      <div class="l3-draw"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_SZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">961×2171</text><line x1="55.0" y1="63" x2="55.0" y2="180" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="102.0" x2="95" y2="102.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="141.0" x2="95" y2="141.0" stroke="#0a0a0a" stroke-width="1.2"/><rect x="15.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="15.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 15.0 180 Q 95.0 180 95.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
+      <div class="ref-line">⊞ Planungsunterlage: planungsunterlagenFG-ZeichnungRingo_2026-11-16.pdf</div>
+    </div>
+    <div class="l3-right">
+      <div class="l3-aufbau">
+        <div class="l3-aufbau-h">Aufbau erkannt</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+      </div>
+      
+      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
+    </div>
+  </div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
+  <div class="l3-checks">
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (10)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="3"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1000 x 2200 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="5"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="6"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 961×2171 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="7"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="8"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 308 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08456" data-idx="9"><span class="lcbx"></span><span class="lcbt">Klebesprossen für Fenster / Felder angebracht</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -3491,7 +3246,7 @@ Gri)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08465" 
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08476</span></div>
     <div class="cl-title">
       <div class="cl-main">Pivottür</div>
-      <div class="cl-sub">Freigabe FG-ZeichnungDG_2026-11-09.pdf</div>
+      <div class="cl-sub">Freigabe Freigabe FG-Zeichnung.pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
@@ -3506,7 +3261,7 @@ Gri)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08465" 
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Pivottür<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Pivottür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3516,6 +3271,43 @@ Gri)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08465" 
   <div class="l3-checks">
     <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (10)</div>
     <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08476" data-idx="3"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1872 x 2125 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Pivottür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Pivottür (RAL nach Wahl: 7021) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08476" data-idx="7"><span class="lcbx"></span><span class="lcbt">Pivottür-Maße 927×2108 mm geprüft</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08476" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehpunkt oben korrekt montiert</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08476" data-idx="9"><span class="lcbx"></span><span class="lcbt">Drehpunkt unten korrekt montiert</span></label></div>
+  </div>
+  <div class="cl-foot">
+    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
+    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
+    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
+  </div>
+</div>
+<div class="checklist" id="cl_S08483" data-level="green">
+  <div class="cl-head">
+    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08483</span></div>
+    <div class="cl-title">
+      <div class="cl-main">Drehtür · Blockzarge</div>
+      <div class="cl-sub">Freigabe S08483.pdf</div>
+    </div>
+    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
+  </div>
+
+  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08483" data-pos="1" data-pos-ges="1" data-sped="Keimeier und Finke" data-montage="" data-url="anleitung.html#S08483-1">🖨 Etikett drucken</button></div>
+  <div class="l3-top">
+    <div class="l3-left">
+      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
+      <div class="l3-draw"><svg viewBox="0 0 110 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">DT_BZ</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">899×2330</text><line x1="15" y1="102.0" x2="95" y2="102.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="141.0" x2="95" y2="141.0" stroke="#0a0a0a" stroke-width="1.2"/><rect x="15.0" y="78" width="3" height="10" fill="#0a0a0a"/><rect x="15.0" y="126" width="3" height="10" fill="#0a0a0a"/><path d="M 15.0 180 Q 95.0 180 95.0 35" fill="none" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3 3"/><rect x="88.0" y="96" width="5" height="22" rx="2" fill="#0a0a0a"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
+      
+    </div>
+    <div class="l3-right">
+      <div class="l3-aufbau">
+        <div class="l3-aufbau-h">Aufbau erkannt</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+      </div>
+      
+      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
+    </div>
+  </div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
+  <div class="l3-checks">
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (12)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 964 x 2372 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 899×2330 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 308 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="10"><span class="lcbx"></span><span class="lcbt">Bänder 2x VX 7729/120) montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08483" data-idx="11"><span class="lcbx"></span><span class="lcbt">2 Sprosse(n) DT waagerecht korrekt</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -3543,7 +3335,7 @@ Gri)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08465" 
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+        <div class="l3-aufbau-b">Drehtür<br>Phase: Zuschnitt AW + ED</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3808,7 +3600,7 @@ für lichtes Öffnungsmaß von: 840 x 1960 mm (BxH)</div>
     <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08535</span></div>
     <div class="cl-title">
       <div class="cl-main">Drehtür · Blockzarge</div>
-      <div class="cl-sub">Freigabe planungsunterlagen.pdf</div>
+      <div class="cl-sub">Freigabe FG-Zeichnung(6).pdf</div>
     </div>
     <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
   </div>
@@ -3823,7 +3615,7 @@ für lichtes Öffnungsmaß von: 840 x 1960 mm (BxH)</div>
     <div class="l3-right">
       <div class="l3-aufbau">
         <div class="l3-aufbau-h">Aufbau erkannt</div>
-        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Bestellungen auslösen</div>
+        <div class="l3-aufbau-b">Drehtür · Blockzarge<br>Phase: Produktionszeichnung erstellen ED+HS</div>
       </div>
       
       <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
@@ -3831,8 +3623,8 @@ für lichtes Öffnungsmaß von: 840 x 1960 mm (BxH)</div>
   </div>
   <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
   <div class="l3-checks">
-    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (12)</div>
-    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="4"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1004 x 2255 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="5"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="6"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="7"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 937×2212 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="8"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="9"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 160 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="10"><span class="lcbx"></span><span class="lcbt">Bänder 2x VX 7729/120) montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="11"><span class="lcbx"></span><span class="lcbt">Klebesprossen für Fenster / Felder angebracht</span></label></div>
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (13)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIM-Griff geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="3"><span class="lcbx"></span><span class="lcbt">Bänder VX montiert</span></label><label class="l3-cb warn-it"><input type="checkbox" data-nr="S08535" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glasmaße nicht erkannt — manuell</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="5"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: 1004 x 2255 mm (BxH))</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="6"><span class="lcbx"></span><span class="lcbt">Glas Drehtür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="7"><span class="lcbx"></span><span class="lcbt">Oberfläche Drehtür (RAL9005 Schwarz matt Feinstruktur) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="8"><span class="lcbx"></span><span class="lcbt">Drehtür-Maße 937×2212 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="9"><span class="lcbx"></span><span class="lcbt">DIN L kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="10"><span class="lcbx"></span><span class="lcbt">mit SLIM-Griff 160 montiert und geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="11"><span class="lcbx"></span><span class="lcbt">Bänder 2x VX 7729/120) montiert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08535" data-idx="12"><span class="lcbx"></span><span class="lcbt">Klebesprossen für Fenster / Felder angebracht</span></label></div>
   </div>
   <div class="cl-foot">
     <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
@@ -3876,10 +3668,48 @@ für lichtes Öffnungsmaß von: 840 x 1960 mm (BxH)</div>
     <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
     <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
   </div>
+</div>
+<div class="checklist" id="cl_S08547" data-level="green">
+  <div class="cl-head">
+    <div class="cl-auftr"><label>Auftrag</label><span class="cl-nr">S08547</span></div>
+    <div class="cl-title">
+      <div class="cl-main">Schiebetür</div>
+      <div class="cl-sub">Freigabe finale_masse_planungsunterlagenTungeln_2026-11-10.pdf</div>
+    </div>
+    <div class="cl-logo"><svg width="13" height="10" viewBox="0 0 18 14" style="transform:rotate(-45deg)"><path d="M9 1L17 13H1L9 1Z" fill="#fff"/></svg></div>
+  </div>
+
+  <div style="padding:6px 14px 2px;"><button class="oc-print-btn" onclick="flynnPrintLabel(this)" data-snr="S08547" data-pos="1" data-pos-ges="1" data-sped="Keimeier und Finke" data-montage="" data-url="anleitung.html#S08547-1">🖨 Etikett drucken</button></div>
+  <div class="l3-top">
+    <div class="l3-left">
+      <div class="l3-left-h">◳ Elemente aus Auftragszeilen</div>
+      <div class="l3-draw"><svg viewBox="0 0 195 210" xmlns="http://www.w3.org/2000/svg" font-family="Barlow,sans-serif"><rect x="15" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><line x1="15" y1="40" x2="95" y2="40" stroke="#0a0a0a" stroke-width="3"/><rect x="32.5" y="37" width="5" height="6" fill="#0a0a0a"/><rect x="72.5" y="37" width="5" height="6" fill="#0a0a0a"/><text x="55.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="55.0" y="59" font-size="7" text-anchor="middle" fill="#555">1023×2140</text><line x1="15" y1="102.0" x2="95" y2="102.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="15" y1="141.0" x2="95" y2="141.0" stroke="#0a0a0a" stroke-width="1.2"/><text x="55.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text><rect x="100" y="35" width="80" height="145" fill="white" stroke="#0a0a0a" stroke-width="1.8"/><line x1="100" y1="40" x2="180" y2="40" stroke="#0a0a0a" stroke-width="3"/><rect x="117.5" y="37" width="5" height="6" fill="#0a0a0a"/><rect x="157.5" y="37" width="5" height="6" fill="#0a0a0a"/><text x="140.0" y="48" font-size="9.5" font-weight="800" text-anchor="middle">ST</text><text x="140.0" y="59" font-size="7" text-anchor="middle" fill="#555">1023×2140</text><line x1="100" y1="102.0" x2="180" y2="102.0" stroke="#0a0a0a" stroke-width="1.2"/><line x1="100" y1="141.0" x2="180" y2="141.0" stroke="#0a0a0a" stroke-width="1.2"/><text x="140.0" y="202" font-size="7" text-anchor="middle" fill="#666">Klarglas</text></svg></div>
+      <div class="ref-line">⊞ Planungsunterlage: finale_masse_planungsunterlagenTungeln_2026-11-10.pdf</div>
+    </div>
+    <div class="l3-right">
+      <div class="l3-aufbau">
+        <div class="l3-aufbau-h">Aufbau erkannt</div>
+        <div class="l3-aufbau-b">Schiebetür<br>Phase: Produktionszeichnung erstellen ED+HS</div>
+      </div>
+      
+      <table class="l3-mass"><tbody><tr><td>Türbreite</td><td class="na-m">aus Zeichnung</td></tr></tbody></table>
+    </div>
+  </div>
+  <div class="lean-stripe"><div class="lsc na"><span class="lsd"></span>Maß aus Zeichnung</div><div class="lsc ok"><span class="lsd"></span>Freigabe vorhanden</div><div class="lsc ok"><span class="lsd"></span>Aufbau erkannt</div></div>
+  <div class="l3-checks">
+    <div class="l3-checks-h"><span class="lsd acc"></span>Prüfpunkte (11)</div>
+    <div class="l3-cb-grid"><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="0"><span class="lcbx"></span><span class="lcbt">Glas auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="1"><span class="lcbx"></span><span class="lcbt">Oberfläche / RAL sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="2"><span class="lcbx"></span><span class="lcbt">Griff: SLIDE-Griff (Klebegriff) geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="3"><span class="lcbx"></span><span class="lcbt">Gesamtmaß Öffnung geprüft (von: ca. 1997 x 2132 mm (BxH)
+)</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="4"><span class="lcbx"></span><span class="lcbt">Glas Schiebetür auf Kratzer / Fehler</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="5"><span class="lcbx"></span><span class="lcbt">Oberfläche Schiebetür (RAL9016 weiß matt Feinstruktur (057)) sauber</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="6"><span class="lcbx"></span><span class="lcbt">Schiebetür-Maße 1023×2140 mm geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="7"><span class="lcbx"></span><span class="lcbt">DIN L Schiebetür kontrolliert</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="8"><span class="lcbx"></span><span class="lcbt">Laufschiene geprüft</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="9"><span class="lcbx"></span><span class="lcbt">Bodenführung verpackt</span></label><label class="l3-cb"><input type="checkbox" data-nr="S08547" data-idx="10"><span class="lcbx"></span><span class="lcbt">DIN R Schiebetür kontrolliert</span></label></div>
+  </div>
+  <div class="cl-foot">
+    <div class="cl-sign"><label>Geprüft von</label><div class="sign-line"></div></div>
+    <div class="cl-sign"><label>Datum</label><div class="sign-line"></div></div>
+    <div class="cl-stamp"><div class="sc"><div class="s1">HAND-<br>GEFERTIGT</div><div class="s2">OWL</div></div></div>
+  </div>
 </div></div>
 
 <script>
-var COUNTS={"S02518": 12, "S06110": 11, "S06362": 14, "S06785": 10, "S07306": 15, "S07515": 10, "S07660": 16, "S07723": 11, "S07730": 11, "S07788": 9, "S07805": 13, "S07958": 19, "S07964": 11, "S07967": 12, "S08002": 13, "S08028": 13, "S08039": 11, "S08068": 9, "S08117": 12, "S08124": 15, "S08132": 19, "S08135": 16, "S08153": 13, "S08157": 24, "S08158": 19, "S08174": 38, "S08180": 13, "S08185": 10, "S08188": 10, "S08195": 22, "S08206": 3, "S08235": 9, "S08259": 12, "S08270": 15, "S08280": 16, "S08291": 19, "S08351": 14, "S08361": 12, "S08363": 11, "S08365": 23, "S08366": 17, "S08378": 3, "S08379": 13, "S08381": 17, "S08397": 12, "S08401": 16, "S08405": 15, "S08409": 9, "S08410": 11, "S08412": 11, "S08413": 11, "S08415": 15, "S08429": 3, "S08434": 17, "S08438": 11, "S08448": 3, "S08450": 15, "S08460": 11, "S08461": 12, "S08462": 13, "S08464": 10, "S08465": 10, "S08472": 18, "S08476": 10, "S08485": 12, "S08488": 10, "S08489": 9, "S08493": 12, "S08498": 18, "S08510": 13, "S08512": 10, "S08535": 12, "S08545": 7};
+var COUNTS={"S02518": 12, "S06110": 11, "S06785": 10, "S07306": 15, "S07515": 10, "S07660": 16, "S07723": 11, "S07730": 11, "S07788": 9, "S07805": 13, "S07958": 19, "S07964": 11, "S08002": 13, "S08028": 13, "S08039": 11, "S08068": 9, "S08117": 12, "S08124": 15, "S08132": 19, "S08135": 16, "S08153": 13, "S08157": 24, "S08166": 11, "S08174": 38, "S08180": 13, "S08185": 10, "S08188": 10, "S08195": 22, "S08235": 9, "S08259": 12, "S08270": 15, "S08280": 16, "S08291": 19, "S08351": 14, "S08361": 12, "S08363": 11, "S08365": 23, "S08366": 17, "S08379": 13, "S08397": 12, "S08401": 16, "S08405": 15, "S08409": 9, "S08410": 11, "S08412": 11, "S08415": 15, "S08429": 3, "S08434": 17, "S08438": 11, "S08448": 3, "S08450": 14, "S08456": 10, "S08460": 11, "S08461": 12, "S08462": 13, "S08464": 10, "S08465": 10, "S08472": 18, "S08476": 10, "S08483": 12, "S08485": 12, "S08488": 10, "S08489": 9, "S08493": 12, "S08498": 18, "S08510": 13, "S08512": 10, "S08535": 13, "S08545": 7, "S08547": 11};
 var STORE="flynn_chk_v1";
 var chipF="all";
 var ODOO_URL="https://flynn42-odoo.odoo.com";
@@ -3937,7 +3767,7 @@ function closeCl(){
   document.getElementById('overview').style.display='block';
   document.getElementById('backBtn').style.display='none';
   document.getElementById('printBtn').style.display='none';
-  document.getElementById('phsub').textContent='73 Aufträge · Stand 13.11.2026';
+  document.getElementById('phsub').textContent='70 Aufträge · Stand 17.11.2026';
   document.querySelectorAll('.checklist').forEach(function(c){c.classList.remove('show');});
 }
 function setChip(el){
