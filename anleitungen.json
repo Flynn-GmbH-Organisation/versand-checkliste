@@ -38,17 +38,6 @@
       }
     ]
   },
-  "S08117-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "FORMAT (Norm-Lofttüren)",
-        "url": "https://www.flynn-gmbh.de/web/content/79497?unique=e0d4895dddc670eb666598ae4472a2dfc5c982f4&download=true"
-      }
-    ]
-  },
   "S08039-1": {
     "typen": [
       "schiebetuer"
@@ -369,22 +358,6 @@
     ],
     "anleitungen": []
   },
-  "S08401-1": {
-    "typen": [
-      "drehtuer",
-      "festelement"
-    ],
-    "anleitungen": [
-      {
-        "titel": "SLIM-Zarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
-      },
-      {
-        "titel": "Festelement",
-        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
-      }
-    ]
-  },
   "S08405-1": {
     "typen": [
       "drehtuer",
@@ -409,33 +382,6 @@
       {
         "titel": "Pivot SLIM PLUS",
         "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
-      }
-    ]
-  },
-  "S08415-1": {
-    "typen": [
-      "drehtuer",
-      "festelement"
-    ],
-    "anleitungen": [
-      {
-        "titel": "SLIM-Zarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
-      },
-      {
-        "titel": "Festelement",
-        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
-      }
-    ]
-  },
-  "S08412-1": {
-    "typen": [
-      "drehtuer"
-    ],
-    "anleitungen": [
-      {
-        "titel": "SLIM-Zarge",
-        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
       }
     ]
   },
@@ -1016,5 +962,427 @@
       "schiebetuer"
     ],
     "anleitungen": []
+  },
+  "S03160-1": {
+    "typen": [
+      "drehtuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      },
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S03160-2": {
+    "typen": [
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S03160-3": {
+    "typen": [
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S03160-4": {
+    "typen": [
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-1": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-2": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-3": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-4": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-5": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-6": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-7": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-8": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-9": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-10": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-11": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-12": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-13": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-14": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-15": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-16": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-17": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-18": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-19": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-20": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-21": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-22": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-23": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-24": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-25": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-26": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08537-27": {
+    "typen": [
+      "schiebetuer",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
+  },
+  "S08382-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "SLIM-Zarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
+      }
+    ]
+  },
+  "S07725-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "SLIM-Zarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79496?unique=b8c56035c754a726210d8f2e3c5a0c991bcd249c&download=true"
+      }
+    ]
+  },
+  "S08495-1": {
+    "typen": [
+      "drehtuer"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Blockzarge",
+        "url": "https://www.flynn-gmbh.de/web/content/79490?unique=3adb856093139ff0f0c847c989120375107d1267&download=true"
+      }
+    ]
+  },
+  "S08563-1": {
+    "typen": [
+      "pivot",
+      "festelement"
+    ],
+    "anleitungen": [
+      {
+        "titel": "Pivot SLIM PLUS",
+        "url": "https://www.flynn-gmbh.de/web/content/79503?unique=771ac4b7c1410e65a5d552c17ce320ea021d7f54&download=true"
+      },
+      {
+        "titel": "Festelement",
+        "url": "https://www.flynn-gmbh.de/web/content/78933?unique=6a487d3ac39c8c039e821a074fd5e80b85ac0ab9&download=true"
+      }
+    ]
   }
 }
